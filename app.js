@@ -32,7 +32,31 @@ const problems = {
     "D. A change in the kinetic energy cannot be determined"
   ],
   answer: "A. Decrease"
+},
+    {
+  question: "A person is standing in an elevator which is accelerating upwards. Which of the following is true of the person's apparent weight?",
+  image: "https://i.imgur.com/arhNPRC.png",
+  options: [
+    "A. The person's apparent weight is zero",
+    "B. The person's apparent weight is equal to the person's weight",
+    "C. The person's apparent weight is less than the person's weight, but is not zero",
+    "D. The person's apparent weight is greater than the person's weight"
+  ],
+  answer: "D. The person's apparent weight is greater than the person's weight"
+},
+    {
+  question: "A block is sliding on an incline with negligible friction as shown in the figure above. At time t = 0 s the block is moving up the incline with a speed of 1.5 m/s. The magnitude of the acceleration of the block is a constant 1.0 m/s² down the incline. At t = 3 s, what is the direction of the block's motion and is the speed increasing or decreasing?",
+  image: "https://i.imgur.com/b5GeWfM.png",
+  options: [
+    "A. Down the incline with decreasing speed",
+    "B. Up the incline with decreasing speed",
+    "C. Down the incline with increasing speed",
+    "D. Up the incline with increasing speed"
+  ],
+  answer: "C. Down the incline with increasing speed"
 }
+
+
 
   ],
   precalc: [

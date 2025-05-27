@@ -20,7 +20,7 @@ const problems = {
         "Pₐ = Pᵦ and P꜀ = P𝒟",
         "Pₐ = Pᵦ and P꜀ > P𝒟"
       ],
-      answer: "Pₐ = Pᵦ and P꜀ > P𝒟"
+      answer: "Pₐ > Pᵦ and P꜀ = P𝒟"
     }
   ],
   precalc: [

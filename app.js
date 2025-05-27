@@ -13,7 +13,7 @@ const problems = {
     },
     {
       question: "A tube contains a volume of water and a volume of mercury as shown in the figure above. Both ends of the tube are open. Points A and B are at the same level and points C and D are at the same level. The distance between points A and B and the surface of the liquids are shown. Which of the following correctly relates the gauge pressures at the points shown? The density of the water is 1,000 kg/m³ and the density of the mercury is 13,600 kg/m³.",
-      image: "images/mercury_tube.png",
+      image: "https://i.imgur.com/J2e6UnT.png",
       options: [
         "Pₐ > Pᵦ and P꜀ > P𝒟",
         "Pₐ > Pᵦ and P꜀ = P𝒟",

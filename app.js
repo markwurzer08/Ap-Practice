@@ -21,7 +21,19 @@ const problems = {
         "Pₐ = Pᵦ and P꜀ > P𝒟"
       ],
       answer: "Pₐ > Pᵦ and P꜀ = P𝒟"
-    }
+    },
+    {
+ question: "A satellite is in a circular orbit around the Earth and moves at a constant speed. If the height of the orbit above the surface of the Earth increased (and the orbit remained circular), the kinetic energy of the satellite would:",
+  image: "https://i.imgur.com/3orBZ8B.png",
+  options: [
+    "A. Decrease",
+    "B. Increase",
+    "C. Not Change",
+    "D. A change in the kinetic energy cannot be determined"
+  ],
+  answer: "A. Decrease"
+}
+
   ],
   precalc: [
     {

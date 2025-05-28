@@ -68,6 +68,21 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Question image */
+#question-image {
+  margin: 1em 0;
+  im:left;
+}
+
+#question-image img {
+  max-width: 100px;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
 /* Answer buttons */
 #answer-options button {
   display: block;

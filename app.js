@@ -1,4 +1,3 @@
-// Define the problems for AP Physics 1 and AP Precalculus
 const problems = {
   physics: [
     {
@@ -8,7 +7,12 @@ const problems = {
     },
     {
       question: "Which of the following is true for an object in uniform circular motion?",
-      options: ["The object’s speed is constant.", "The object’s velocity is constant.", "The object’s acceleration is zero.", "The object is not moving."],
+      options: [
+        "The object’s speed is constant.",
+        "The object’s velocity is constant.",
+        "The object’s acceleration is zero.",
+        "The object is not moving."
+      ],
       answer: "The object’s speed is constant."
     },
     {
@@ -70,7 +74,7 @@ const problems = {
         "C. Decreases",
         "D. The change in speed of the center of mass of the system cannot be determined."
       ],
-      answer:"B. Does not change"
+      answer: "B. Does not change"
     }
   ],
   precalc: [
@@ -87,7 +91,6 @@ const problems = {
   ]
 };
 
-// Current question data
 let currentSubject = null;
 let currentIndex = 0;
 let currentProblem = null;
@@ -96,10 +99,13 @@ function startPractice(subject) {
   currentSubject = subject;
   currentIndex = 0;
 
-  // Show question container and hide subject chooser
-  document.getElementById('question-container').style.display = 'block';
-  document.getElementById('choose-subject').style.display = 'none';
+  // Hide the choose subject section and images
+  document.getElementById("choose-subject").style.display = "none";
+  document.getElementById("image-gallery").style.display = "none";
 
+  // Show question container
+  document.getElementById("question-container").style.display = "block";
+  
   showQuestion();
 }
 
@@ -107,10 +113,10 @@ function showQuestion() {
   const subjectProblems = problems[currentSubject];
   if (currentIndex < subjectProblems.length) {
     currentProblem = subjectProblems[currentIndex];
-    document.getElementById("question-title").textContent = `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
+    document.getElementById("question-title").textContent = 
+      `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
     document.getElementById("question-text").textContent = currentProblem.question;
 
-    // Display image if it exists
     const imageContainer = document.getElementById("question-image");
     if (currentProblem.image) {
       imageContainer.innerHTML = `<img src="${currentProblem.image}" alt="Question image" style="max-width:100%; height:auto;">`;
@@ -128,6 +134,7 @@ function showQuestion() {
     });
 
     document.getElementById("next-button").style.display = 'none';
+
   } else {
     document.getElementById("question-container").innerHTML = "<h2>Congratulations! You've completed the practice!</h2>";
   }
@@ -136,10 +143,4 @@ function showQuestion() {
 function checkAnswer(selectedOption) {
   const isCorrect = selectedOption === currentProblem.answer;
   alert(isCorrect ? "Correct!" : "Incorrect. The correct answer was: " + currentProblem.answer);
-  document.getElementById("next-button").style.display = 'inline-block';
-}
-
-function nextQuestion() {
-  currentIndex++;
-  showQuestion();
-}
+ 

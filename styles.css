@@ -19,23 +19,41 @@ header h1 {
   margin: 0;
 }
 
-nav ul {
+/* Center the "Choose Subject" section */
+#choose-subject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* Nav links in the centered section */
+#choose-subject nav ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav ul li {
-  display: inline;
+#choose-subject nav ul li {
   margin: 10px;
 }
 
-nav a {
-  color: white;
+#choose-subject nav a {
+  color: #4CAF50;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
+#choose-subject nav a:hover {
+  text-decoration: underline;
+}
+
+/* Question container (initially hidden) */
 #question-container {
+  display: none;
   padding: 20px;
   background-color: white;
   margin: 20px;
@@ -65,15 +83,4 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-/* Center the "Choose Subject" section */
-#choose-subject {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  text-align: center;
-  font-size: 1.2em;
 }

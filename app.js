@@ -1,3 +1,4 @@
+// Define the problems for AP Physics 1 and AP Precalculus
 const problems = {
   physics: [
     {
@@ -9,6 +10,67 @@ const problems = {
       question: "Which of the following is true for an object in uniform circular motion?",
       options: ["The object’s speed is constant.", "The object’s velocity is constant.", "The object’s acceleration is zero.", "The object is not moving."],
       answer: "The object’s speed is constant."
+    },
+    {
+      question: "A tube contains a volume of water and a volume of mercury as shown in the figure above...",
+      image: "https://i.imgur.com/J2e6UnT.png",
+      options: [
+        "Pₐ > Pᵦ and P꜀ > P𝒟",
+        "Pₐ > Pᵦ and P꜀ = P𝒟",
+        "Pₐ = Pᵦ and P꜀ = P𝒟",
+        "Pₐ = Pᵦ and P꜀ > P𝒟"
+      ],
+      answer: "Pₐ > Pᵦ and P꜀ = P𝒟"
+    },
+    {
+      question: "A satellite is in a circular orbit around the Earth...",
+      image: "https://i.imgur.com/3orBZ8B.png",
+      options: [
+        "A. Decrease",
+        "B. Increase",
+        "C. Not Change",
+        "D. A change in the kinetic energy cannot be determined"
+      ],
+      answer: "A. Decrease"
+    },
+    {
+      question: "A person is standing in an elevator which is accelerating upwards...",
+      image: "https://i.imgur.com/arhNPRC.png",
+      options: [
+        "A. The person's apparent weight is zero",
+        "B. The person's apparent weight is equal to the person's weight",
+        "C. The person's apparent weight is less than the person's weight, but is not zero",
+        "D. The person's apparent weight is greater than the person's weight"
+      ],
+      answer: "D. The person's apparent weight is greater than the person's weight"
+    },
+    {
+      question: "A block is sliding on an incline with negligible friction...",
+      image: "https://i.imgur.com/b5GeWfM.png",
+      options: [
+        "A. Down the incline with decreasing speed",
+        "B. Up the incline with decreasing speed",
+        "C. Down the incline with increasing speed",
+        "D. Up the incline with increasing speed"
+      ],
+      answer: "C. Down the incline with increasing speed"
+    },
+    {
+      question: "A rock is attached to a 0.4m long string...",
+      image: "https://i.imgur.com/0K04fS8.png",
+      options: ["A. 0.6 m/s", "B. 1.3 m/s", "C. 2.2 m/s", "D. 2.5 m/s"],
+      answer: "B. 1.3 m/s"
+    },
+    {
+      question: "Two blocks are on a surface with negligible friction...",
+      image: "https://i.imgur.com/TMRX4ul.png",
+      options: [
+        "A. Increase",
+        "B. Does not change",
+        "C. Decreases",
+        "D. The change in speed of the center of mass of the system cannot be determined."
+      ],
+      answer: "B. Does not change"
     }
   ],
   precalc: [
@@ -32,10 +94,6 @@ let currentProblem = null;
 function startPractice(subject) {
   currentSubject = subject;
   currentIndex = 0;
-
-  document.getElementById("choose-subject").style.display = "none";
-  document.getElementById("question-container").style.display = "block";
-
   showQuestion();
 }
 
@@ -43,14 +101,15 @@ function showQuestion() {
   const subjectProblems = problems[currentSubject];
   if (currentIndex < subjectProblems.length) {
     currentProblem = subjectProblems[currentIndex];
-    document.getElementById("question-title").textContent =
-      `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
+    document.getElementById("question-title").textContent = `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
     document.getElementById("question-text").textContent = currentProblem.question;
 
     const imageContainer = document.getElementById("question-image");
-    imageContainer.innerHTML = currentProblem.image
-      ? `<img src="${currentProblem.image}" alt="Question image" style="max-width:100%; height:auto;">`
-      : '';
+    if (currentProblem.image) {
+      imageContainer.innerHTML = `<img src="${currentProblem.image}" alt="Question image" style="max-width:100%; height:auto;">`;
+    } else {
+      imageContainer.innerHTML = '';
+    }
 
     const answerOptions = document.getElementById("answer-options");
     answerOptions.innerHTML = '';
@@ -63,8 +122,7 @@ function showQuestion() {
 
     document.getElementById("next-button").style.display = 'none';
   } else {
-    document.getElementById("question-container").innerHTML =
-      "<h2>Congratulations! You've completed the practice!</h2>";
+    document.getElementById("question-container").innerHTML = "<h2>Congratulations! You've completed the practice!</h2>";
   }
 }
 

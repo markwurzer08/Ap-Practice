@@ -13,6 +13,18 @@ header {
   padding: 10px 0;
   text-align: center;
 }
+header a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600; /* Bold by default */
+  transition: font-weight 0.2s ease;
+}
+
+header a:hover {
+  font-weight: 5000; /* Even bolder on hover */
+  text-decoration: underline;
+}
 
 header h1 {
   margin: 0;

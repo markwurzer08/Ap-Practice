@@ -57,9 +57,9 @@ const problems = {
     },
     {
       question: "A rock is attached to a 0.4m long string and is swung through the air so that the path of the rock follows a horizontal circle as shown in the top view figure above. The string makes a 30 degree angle with the vertical as shown in the side view figure. The rock completes one revolution per second. The speed of the rock is most nearly",
-      image: "https://i.imgur.com/0K04fS8.png",
       options: ["A. 0.6 m/s", "B. 1.3 m/s", "C. 2.2 m/s", "D. 2.5 m/s"],
-      answer: "B. 1.3 m/s"
+      answer: "B. 1.3 m/s",
+      image: "https://i.imgur.com/0K04fS8.png"
     },
     {
       question: "Two blocks are on a surface with negligible friction. Block 1 slides towards block 2 and they stick together and move to the right. During the collision the speed of the center of mass of the system",
@@ -70,7 +70,7 @@ const problems = {
         "C. Decreases",
         "D. The change in speed of the center of mass of the system cannot be determined."
       ],
-      answer: "B. Does not change"
+      answer:"B. Does not change"
     }
   ],
   precalc: [
@@ -96,9 +96,9 @@ function startPractice(subject) {
   currentSubject = subject;
   currentIndex = 0;
 
-  // Hide home screen and show question container
-  document.getElementById("choose-subject").style.display = "none";
-  document.getElementById("question-container").style.display = "block";
+  // Show question container and hide subject chooser
+  document.getElementById('question-container').style.display = 'block';
+  document.getElementById('choose-subject').style.display = 'none';
 
   showQuestion();
 }
@@ -107,8 +107,7 @@ function showQuestion() {
   const subjectProblems = problems[currentSubject];
   if (currentIndex < subjectProblems.length) {
     currentProblem = subjectProblems[currentIndex];
-    document.getElementById("question-title").textContent =
-      `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
+    document.getElementById("question-title").textContent = `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
     document.getElementById("question-text").textContent = currentProblem.question;
 
     // Display image if it exists
@@ -119,7 +118,6 @@ function showQuestion() {
       imageContainer.innerHTML = '';
     }
 
-    // Display options
     const answerOptions = document.getElementById("answer-options");
     answerOptions.innerHTML = '';
     currentProblem.options.forEach(option => {
@@ -131,8 +129,7 @@ function showQuestion() {
 
     document.getElementById("next-button").style.display = 'none';
   } else {
-    document.getElementById("question-container").innerHTML =
-      "<h2>Congratulations! You've completed the practice!</h2>";
+    document.getElementById("question-container").innerHTML = "<h2>Congratulations! You've completed the practice!</h2>";
   }
 }
 

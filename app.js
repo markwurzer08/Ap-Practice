@@ -54,7 +54,24 @@ const problems = {
     "D. Up the incline with increasing speed"
   ],
   answer: "C. Down the incline with increasing speed"
-}
+},
+    {
+  question: "A rock is attached to a 0.4m long string and is swung through the air so that the path of the rock follows a horizontal circle as shown in the top view figure above. The string makes a 30 degree angle with the vertical as shown in the side view figure. The rock completes one revolution per second. The speed of the rock is most nearly",
+  options: ["A. 0.6 m/s", "B. 1.3 m/s", "C. 2.2 m/s", "D. 2.5 m/s"],
+  answer: "B. 1.3 m/s",
+  image: "https://i.imgur.com/0K04fS8.png"  // Include this line only if you have an image for the question
+},
+    {
+      question: "Two blocks are on a surface with negligible friction. Block 1 slides towards block 2 and they stick together and move to the right. During the collision the speed of the center of mass of the system",
+      image: "https://i.imgur.com/TMRX4ul.png",
+      options: [
+        "A. Increase",
+        "B. Does not change",
+        "C. Decreases",
+        "D. The change in speed of the center of mass of the system cannot be determined."
+],
+      answer:"B. Does not change"
+    }
 
 
 

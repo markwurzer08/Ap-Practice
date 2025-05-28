@@ -143,3 +143,16 @@ function nextQuestion() {
   currentIndex++;
   showQuestion();
 }
+function goHome() {
+  // Hide the question container
+  document.getElementById("question-container").style.display = "none";
+  // Show the subject selection screen
+  document.getElementById("choose-subject").style.display = "block";
+
+
+  // Reset question state
+  currentSubject = null;
+  currentIndex = 0;
+  currentProblem = null;
+}
+

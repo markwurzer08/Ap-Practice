@@ -1,3 +1,4 @@
+// Define the problems for AP Physics 1 and AP Precalculus
 const problems = {
   physics: [
     {
@@ -7,12 +8,7 @@ const problems = {
     },
     {
       question: "Which of the following is true for an object in uniform circular motion?",
-      options: [
-        "The object’s speed is constant.",
-        "The object’s velocity is constant.",
-        "The object’s acceleration is zero.",
-        "The object is not moving."
-      ],
+      options: ["The object’s speed is constant.", "The object’s velocity is constant.", "The object’s acceleration is zero.", "The object is not moving."],
       answer: "The object’s speed is constant."
     },
     {
@@ -61,9 +57,9 @@ const problems = {
     },
     {
       question: "A rock is attached to a 0.4m long string and is swung through the air so that the path of the rock follows a horizontal circle as shown in the top view figure above. The string makes a 30 degree angle with the vertical as shown in the side view figure. The rock completes one revolution per second. The speed of the rock is most nearly",
+      image: "https://i.imgur.com/0K04fS8.png",
       options: ["A. 0.6 m/s", "B. 1.3 m/s", "C. 2.2 m/s", "D. 2.5 m/s"],
-      answer: "B. 1.3 m/s",
-      image: "https://i.imgur.com/0K04fS8.png"
+      answer: "B. 1.3 m/s"
     },
     {
       question: "Two blocks are on a surface with negligible friction. Block 1 slides towards block 2 and they stick together and move to the right. During the collision the speed of the center of mass of the system",
@@ -91,6 +87,7 @@ const problems = {
   ]
 };
 
+// Current question data
 let currentSubject = null;
 let currentIndex = 0;
 let currentProblem = null;
@@ -99,13 +96,10 @@ function startPractice(subject) {
   currentSubject = subject;
   currentIndex = 0;
 
-  // Hide the choose subject section and images
+  // Hide home screen and show question container
   document.getElementById("choose-subject").style.display = "none";
-  document.getElementById("image-gallery").style.display = "none";
-
-  // Show question container
   document.getElementById("question-container").style.display = "block";
-  
+
   showQuestion();
 }
 
@@ -113,10 +107,11 @@ function showQuestion() {
   const subjectProblems = problems[currentSubject];
   if (currentIndex < subjectProblems.length) {
     currentProblem = subjectProblems[currentIndex];
-    document.getElementById("question-title").textContent = 
+    document.getElementById("question-title").textContent =
       `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
     document.getElementById("question-text").textContent = currentProblem.question;
 
+    // Display image if it exists
     const imageContainer = document.getElementById("question-image");
     if (currentProblem.image) {
       imageContainer.innerHTML = `<img src="${currentProblem.image}" alt="Question image" style="max-width:100%; height:auto;">`;
@@ -124,6 +119,7 @@ function showQuestion() {
       imageContainer.innerHTML = '';
     }
 
+    // Display options
     const answerOptions = document.getElementById("answer-options");
     answerOptions.innerHTML = '';
     currentProblem.options.forEach(option => {
@@ -134,13 +130,19 @@ function showQuestion() {
     });
 
     document.getElementById("next-button").style.display = 'none';
-
   } else {
-    document.getElementById("question-container").innerHTML = "<h2>Congratulations! You've completed the practice!</h2>";
+    document.getElementById("question-container").innerHTML =
+      "<h2>Congratulations! You've completed the practice!</h2>";
   }
 }
 
 function checkAnswer(selectedOption) {
   const isCorrect = selectedOption === currentProblem.answer;
   alert(isCorrect ? "Correct!" : "Incorrect. The correct answer was: " + currentProblem.answer);
- 
+  document.getElementById("next-button").style.display = 'inline-block';
+}
+
+function nextQuestion() {
+  currentIndex++;
+  showQuestion();
+}

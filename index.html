@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJG5P50NFJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SJG5P50NFJ');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJG5P50NFJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SJG5P50NFJ');
+  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +18,10 @@
 <body>
 
   <header>
-    <h1></h1>AP Practice</h1>
+    <h1>AP Practice</h1>
+  </header>
+
+  <div id="choose-subject">
     <p>Choose a subject to start practicing:</p>
     <nav>
       <ul>
@@ -27,15 +29,12 @@
         <li><a href="#" onclick="startPractice('precalc')">AP Precalculus</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
 
   <div id="question-container">
     <h2 id="question-title">Welcome! Choose a subject to start.</h2>
     <div id="question-text"></div>
-
-    <!-- 👇 Add this for image support -->
     <div id="question-image" style="margin: 1em 0;"></div>
-
     <div id="answer-options"></div>
     <button id="next-button" onclick="nextQuestion()">Next Question</button>
   </div>

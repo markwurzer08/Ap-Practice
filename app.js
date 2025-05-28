@@ -12,7 +12,7 @@ const problems = {
       answer: "The object’s speed is constant."
     },
     {
-      question: "A tube contains a volume of water and a volume of mercury as shown in the figure above...",
+      question: "A tube contains a volume of water and a volume of mercury as shown in the figure above. Both ends of the tube are open. Points A and B are at the same level and points C and D are at the same level. The distance between points A and B and the surface of the liquids are shown. Which of the following correctly relates the gauge pressures at the points shown? The density of the water is 1,000 kg/m³ and the density of the mercury is 13,600 kg/m³.",
       image: "https://i.imgur.com/J2e6UnT.png",
       options: [
         "Pₐ > Pᵦ and P꜀ > P𝒟",
@@ -23,7 +23,7 @@ const problems = {
       answer: "Pₐ > Pᵦ and P꜀ = P𝒟"
     },
     {
-      question: "A satellite is in a circular orbit around the Earth...",
+      question: "A satellite is in a circular orbit around the Earth and moves at a constant speed. If the height of the orbit above the surface of the Earth increased (and the orbit remained circular), the kinetic energy of the satellite would:",
       image: "https://i.imgur.com/3orBZ8B.png",
       options: [
         "A. Decrease",
@@ -34,7 +34,7 @@ const problems = {
       answer: "A. Decrease"
     },
     {
-      question: "A person is standing in an elevator which is accelerating upwards...",
+      question: "A person is standing in an elevator which is accelerating upwards. Which of the following is true of the person's apparent weight?",
       image: "https://i.imgur.com/arhNPRC.png",
       options: [
         "A. The person's apparent weight is zero",
@@ -45,7 +45,7 @@ const problems = {
       answer: "D. The person's apparent weight is greater than the person's weight"
     },
     {
-      question: "A block is sliding on an incline with negligible friction...",
+      question: "A block is sliding on an incline with negligible friction as shown in the figure above. At time t = 0 s the block is moving up the incline with a speed of 1.5 m/s. The magnitude of the acceleration of the block is a constant 1.0 m/s² down the incline. At t = 3 s, what is the direction of the block's motion and is the speed increasing or decreasing?",
       image: "https://i.imgur.com/b5GeWfM.png",
       options: [
         "A. Down the incline with decreasing speed",
@@ -56,13 +56,13 @@ const problems = {
       answer: "C. Down the incline with increasing speed"
     },
     {
-      question: "A rock is attached to a 0.4m long string...",
-      image: "https://i.imgur.com/0K04fS8.png",
+      question: "A rock is attached to a 0.4m long string and is swung through the air so that the path of the rock follows a horizontal circle as shown in the top view figure above. The string makes a 30 degree angle with the vertical as shown in the side view figure. The rock completes one revolution per second. The speed of the rock is most nearly",
       options: ["A. 0.6 m/s", "B. 1.3 m/s", "C. 2.2 m/s", "D. 2.5 m/s"],
-      answer: "B. 1.3 m/s"
+      answer: "B. 1.3 m/s",
+      image: "https://i.imgur.com/0K04fS8.png"
     },
     {
-      question: "Two blocks are on a surface with negligible friction...",
+      question: "Two blocks are on a surface with negligible friction. Block 1 slides towards block 2 and they stick together and move to the right. During the collision the speed of the center of mass of the system",
       image: "https://i.imgur.com/TMRX4ul.png",
       options: [
         "A. Increase",
@@ -70,7 +70,7 @@ const problems = {
         "C. Decreases",
         "D. The change in speed of the center of mass of the system cannot be determined."
       ],
-      answer: "B. Does not change"
+      answer:"B. Does not change"
     }
   ],
   precalc: [
@@ -87,6 +87,7 @@ const problems = {
   ]
 };
 
+// Current question data
 let currentSubject = null;
 let currentIndex = 0;
 let currentProblem = null;
@@ -94,6 +95,11 @@ let currentProblem = null;
 function startPractice(subject) {
   currentSubject = subject;
   currentIndex = 0;
+
+  // Show question container and hide subject chooser
+  document.getElementById('question-container').style.display = 'block';
+  document.getElementById('choose-subject').style.display = 'none';
+
   showQuestion();
 }
 
@@ -104,6 +110,7 @@ function showQuestion() {
     document.getElementById("question-title").textContent = `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
     document.getElementById("question-text").textContent = currentProblem.question;
 
+    // Display image if it exists
     const imageContainer = document.getElementById("question-image");
     if (currentProblem.image) {
       imageContainer.innerHTML = `<img src="${currentProblem.image}" alt="Question image" style="max-width:100%; height:auto;">`;

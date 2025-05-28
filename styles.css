@@ -66,3 +66,14 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* Center the "Choose Subject" section */
+#choose-subject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  font-size: 1.2em;
+}

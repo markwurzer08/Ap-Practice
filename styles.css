@@ -115,6 +115,13 @@ footer {
   border-radius: 4px;
   cursor: pointer;
 }
+@media (max-width: 600px) {
+  #next-button {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
 
 #answer-options button:hover {
   background-color: #ddd;
@@ -143,6 +150,42 @@ footer {
   cursor: pointer;
   margin-top: 20px;
 }
+#answer-wrapper {
+  position: relative;
+  padding-bottom: 60px; /* Gives space below last button */
+}
+
+#answer-options button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#next-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* This is shown when the answer is selected */
+}
+
+#next-button:hover {
+  background-color: #45a049;
+}
+
 
 #next-button:hover {
   background-color: #45a049;

@@ -86,7 +86,7 @@ const problems = {
     {
       question: "A pendulum consists of a sphere of mass m attached to a string with negligible mass. As the pendulum swings back and forth, which of the following statements is true?",
       image: "https://i.imgur.com/qHujzN1.png",
-      optionsP: [
+      options: [
         "A. The total kinetic energy of the sphere-earth system is constant",
         "B. The total energy of the sphere-earth system is constant",
         "C. The total gravitational potential energy of the sphere-earth system is constant",

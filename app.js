@@ -71,7 +71,30 @@ const problems = {
         "D. The change in speed of the center of mass of the system cannot be determined."
       ],
       answer:"B. Does not change"
+    },
+     {
+      question: "An ideal fluid is flowing through the tube shown in the figure above. Which of the following correctly ranks the speed of the fluid through the three areas shown above?",
+      image: "https://i.imgur.com/AF8KcTJ.png",
+      options: [
+        "A. v₁ < v₃ < v₂",
+        "B. v₁ = v₂ = v₃",
+        "C. v₂ < (v₁ = v₃)",
+        "D. v₂ < v₃ < v₁"
+      ],
+      answer:"D. v₂ < v₃ < v₁"
+    },
+    {
+      question: "A pendulum consists of a sphere of mass m attached to a string with negligible mass. As the pendulum swings back and forth, which of the following statements is true?",
+      image: "https://i.imgur.com/qHujzN1.png",
+      optionsP: [
+        "A. The total kinetic energy of the sphere-earth system is constant",
+        "B. The total energy of the sphere-earth system is constant",
+        "C. The total gravitational potential energy of the sphere-earth system is constant",
+        "D. All of the above"
+        ],
+      answer:"B. The total energy of the sphere-earth system is constant"
     }
+      
   ],
   precalc: [
     {

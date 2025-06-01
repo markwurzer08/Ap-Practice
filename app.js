@@ -2,16 +2,6 @@
 const problems = {
   physics: [
     {
-      question: "What is the acceleration of an object in free fall near Earth's surface?",
-      options: ["9.8 m/s²", "10 m/s²", "5 m/s²", "0 m/s²"],
-      answer: "9.8 m/s²"
-    },
-    {
-      question: "Which of the following is true for an object in uniform circular motion?",
-      options: ["The object’s speed is constant.", "The object’s velocity is constant.", "The object’s acceleration is zero.", "The object is not moving."],
-      answer: "The object’s speed is constant."
-    },
-    {
       question: "A tube contains a volume of water and a volume of mercury as shown in the figure above. Both ends of the tube are open. Points A and B are at the same level and points C and D are at the same level. The distance between points A and B and the surface of the liquids are shown. Which of the following correctly relates the gauge pressures at the points shown? The density of the water is 1,000 kg/m³ and the density of the mercury is 13,600 kg/m³.",
       image: "https://i.imgur.com/J2e6UnT.png",
       options: [

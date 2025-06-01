@@ -93,7 +93,78 @@ const problems = {
         "D. All of the above"
         ],
       answer:"B. The total energy of the sphere-earth system is constant"
+    },
+    {
+      question: "A string with negligible mass is wrapped around the outside of a pulley whcih has a radius of 0.1 m. The pulley is initially at rest when a constant 60 N force is applied to the string. The angular momentum after a period of 2s is most nearly",
+      image:"https://i.imgur.com/8TzQgre.png",
+      options: [
+        "A. 0",
+        "B. 12 kg·m²/s",
+        "C. 6 kg·m²/s",
+        "D. Cannot be determined"
+        ],
+      answer:"B. 12 kgm^2/s"
+    },
+    {
+      question:"A boat is in the middle of a lake as shown in the figure above. The boat moves 18 m in a straight line with an unknown direction, and then it moves 25 m in a straight line with an unknown direction. Which of the following cannot be the magnitude of the boat's total displacement?",
+      image:"https://i.imgur.com/7DtftbU.png",
+      options: [
+        "A. 43 m",
+        "B. 18 m",
+        "C. 25 m",
+        "D. 5 m"
+        ],
+      answer:"D. 5m"
+    },
+    {
+      question:"A cart moves on a horizontal surface and its motion is shown in the above graph. Which of the following statements about the motion of the cart is most accurate?",
+      image: "https://i.imgur.com/Z3kAaEp.png",
+      options:[
+        "A. There must be no horizontal forces on the graph between 0s and 2s",
+        "B. There must be no horizontal forces on the cart between 2s and 4s",
+        "C. There may be horizontal forces on the cart between 2s and 4s",
+        "D. None of the above"
+        ],
+      answer: "C. There may be horizontal forces on the cart between 2s and 4s"
+    },
+    {
+      question: "Two blocks are connected by a cable that is wrapped around a pulley as shown in the figure above. Block B has a greater mass than block A so the blocks accelerate and the pulley experiences an angular acceleration (the cable turns the pulley without slipping). If the diameter of the pulley is 0.2m and the angular acceleration of the pulley is 15 rad/s², the magnitutde of the acceleration of the blocks is most nearly",
+      image:"https://i.imgur.com/Kodj9lB.png",
+      options: [
+        "A. 0.75 m/s²",
+        "B. 150 m/s²",
+        "C. 1.5 m/s²",
+        "D. 3.0 m/s²"
+        ],
+      answer: "C. 1.5 m/s²"
+    },
+    {
+      question: "A block is sliding to the right on a surface with negligible friction with a speed of v₀ at time t₁. The block then compresses a spring and reverses direction. The block is moving to the left with the same speed of v₀ at a later time t₂. The magnitude of the impulse exerted on the block by the spring is",
+      image:"https://i.imgur.com/cxApPin.png",
+      options:[
+        "A. 2m₀v₀",
+        "B. m₀v₀",
+        "C. m₀v₀/2",
+        "D. 0"
+        ],
+      answer: "A. 2m₀v₀"
+    },
+    {
+      question: "Three forces of magnitudes F₁, F₂, and F₃ are acting on an object of mass m as shown in the figure above. Which of the following represents the magnitude of the object's acceleration?",
+      image:"https://i.imgur.com/gLNC9EV.png",
+      options:[
+        "A. √((F₃·sin(θ) - F₁) / m)² + ((F₃·cos(θ) - F₂) / m)²",
+        "B. (F₁+F₂+F₃)/m",
+        "C. √((F₃·cos(θ) - F₁) / m)² + ((F₃·sin(θ) - F₂) / m)²",
+        "D. ((F₃·cos(θ) - F₁) / m)² + ((F₃·sin(θ) - F₂) / m)²"
+        ],
+      answer:"C. √((F₃·cos(θ) - F₁) / m)² + ((F₃·sin(θ) - F₂) / m)²"
     }
+
+
+      
+        
+
       
   ],
   precalc: [

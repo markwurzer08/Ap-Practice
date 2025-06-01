@@ -117,17 +117,7 @@ const problems = {
         ],
       answer: "C. There may be horizontal forces on the cart between 2s and 4s"
     },
-    {
-      question: "Two blocks are connected by a cable that is wrapped around a pulley as shown in the figure above. Block B has a greater mass than block A so the blocks accelerate and the pulley experiences an angular acceleration (the cable turns the pulley without slipping). If the diameter of the pulley is 0.2m and the angular acceleration of the pulley is 15 rad/s², the magnitutde of the acceleration of the blocks is most nearly",
-      image:"https://i.imgur.com/Kodj9lB.png",
-      options: [
-        "A. 0.75 m/s²",
-        "B. 150 m/s²",
-        "C. 1.5 m/s²",
-        "D. 3.0 m/s²"
-        ],
-      answer: "C. 1.5 m/s²"
-    },
+    
     {
       question: "A block is sliding to the right on a surface with negligible friction with a speed of v₀ at time t₁. The block then compresses a spring and reverses direction. The block is moving to the left with the same speed of v₀ at a later time t₂. The magnitude of the impulse exerted on the block by the spring is",
       image:"https://i.imgur.com/cxApPin.png",

@@ -93,7 +93,7 @@ const problems = {
         "C. 6 kg·m²/s",
         "D. Cannot be determined"
         ],
-      answer:"B. 12 kgm^2/s"
+      answer:"B. 12 kg·m²/s"
     },
     {
       question:"A boat is in the middle of a lake as shown in the figure above. The boat moves 18 m in a straight line with an unknown direction, and then it moves 25 m in a straight line with an unknown direction. Which of the following cannot be the magnitude of the boat's total displacement?",

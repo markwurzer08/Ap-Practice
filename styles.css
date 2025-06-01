@@ -99,6 +99,10 @@ footer {
   height: auto;
   text-align: left;
 }
+#question-image img {
+  height: 150px;   /* or whatever height you want */
+  width: 250px;     /* keep the aspect ratio */
+  object-fit: contain; /* optional: ensures image fits nicely */
 
 
 /* Answer buttons */

@@ -161,8 +161,43 @@ const problems = {
         "D. Cannot be determined"
         ],
       answer:"C. System B"
+    },
+    {
+      question: "Two blocks are on a surface with negligible friction. A force with a magnitude F₀ is applied to the 2kg block and it accelerates at 4m/s². A force with the same magnitude of F₀ is applied to the 5kg block. If the block starts at rest, what is the speed of the 5kg block after 2 seconds?",
+      image:"https://i.imgur.com/bT5N65N.png",
+      options:[
+        "A. 1.6 m/s",
+        "B. 3.2 m/s",
+        "C. 4.0 m/s",
+        "D. 8.0 m/s"
+        ],
+      answer:"B. 3.2 m/s"
+    },
+    {
+      question: "Two cubes are balanced on a beam which is at rest as shown in the figure above. The centers of mass of each cube are the same distance from the pivot point of the beam. Cube A has a side length of 0.5m and cube B has a side length of 1.0m. What is the ratio of the density of cube A to the density of cube B, ρA/ρB?",
+      image: "https://i.imgur.com/GPNafGs.png",
+      options: [
+        "A. 1/8",
+        "B. 4",
+        "C. 8",
+        "D. 2"
+        ],
+      answer:"C. 8"
+    },
+    {
+      question: "Two identical blocks are sliding down inclines as shown in the figure above. The coefficient of kinetic friction is the same for both inclines. Which block experiences a friction force with a greater magnitude?",
+      image:"https://i.imgur.com/IpwxeSl.png",
+      options:["A. Block A", "B. Block B","C. The blocks experience friction forces with equal magnitude","D. Cannot be determined"],
+      answer: "B. Block B"
+    },
+    {
+      question: "A block is sliding across a surface where the friction is not negligible. The block has an initial speed of v₀ at time t₀. The block then collides with a spring and momentarily comes to a stop at time t₁. Which of the following is true about the block-spring system from time t₀ and time t₁?",
+      image: "https://i.imgur.com/MsgHScI.png",
+      options: ["A. The spring does positive work on the system", "B. The total energy of the system is constant","C. The spring does negative work on the system","D. The total energy of the system decreases"],
+      answer: "D. The total energy of the system decreases"
     }
-  
+    
+        
 
 
       

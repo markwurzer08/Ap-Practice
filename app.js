@@ -139,7 +139,30 @@ const problems = {
         "D. ((F₃·cos(θ) - F₁) / m)² + ((F₃·sin(θ) - F₂) / m)²"
         ],
       answer:"C. √((F₃·cos(θ) - F₁) / m)² + ((F₃·sin(θ) - F₂) / m)²"
+    },
+    {
+      question: "A horizontal pole with a length of L and negligible mass is attached to a wall at point P where it is free to rotate. At the other end of the pole, a block of mass m is suspended by a string with negligible mass and a rope with a tension of T and negligible mass connects the pole and the wall at an angle as shown in the figure above. The magnitude of the net torque acting on the pole about point P is",
+      image:"https://i.imgur.com/8eOShzG.png",
+      options: [ 
+        "A. LTsin(θ) + Lmg",
+        "B. LTcos(θ) - Lmg",
+        "C. LTsin(θ) - Lmg",
+        "D. Tsin(θ) - mg"
+        ],
+      answer:"C. LTsin(θ) - Lmg"
+    },
+    {
+      question:"Two systems consist of identical rods and identical spheres which are free to rotate about the left end of the rod. The sphere in system A is located at the center of the rod, and the sphere in system B is located at the end of the rod. If torques are applied to the systems so that both systems rotate with the same angular speed, which system will have a greater rotational kinetic energy?",
+      image:"https://i.imgur.com/ok2l2yv.png",
+      options:[
+        "A. The systems will have the same rotational kinetic energy",
+        "B. System A",
+        "C. System B",
+        "D. Cannot be determined"
+        ],
+      answer:"C. System B"
     }
+  
 
 
       

@@ -301,6 +301,57 @@ function nextQuestion() {
   currentIndex++;
   showQuestion();
 }
+function showQuestion() {
+  const subjectProblems = problems[currentSubject];
+  if (currentIndex < subjectProblems.length && currentIndex >= 0) {
+    currentProblem = subjectProblems[currentIndex];
+    document.getElementById("question-title").textContent = `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
+    document.getElementById("question-text").textContent = currentProblem.question;
+
+    // Show image if exists
+    const imageContainer = document.getElementById("question-image");
+    if (currentProblem.image) {
+      imageContainer.innerHTML = `<img src="${currentProblem.image}" alt="Question image" style="max-width:100%; height:auto;">`;
+    } else {
+      imageContainer.innerHTML = '';
+    }
+
+    const answerOptions = document.getElementById("answer-options");
+    answerOptions.innerHTML = '';
+    currentProblem.options.forEach(option => {
+      const button = document.createElement("button");
+      button.textContent = option;
+      button.onclick = () => checkAnswer(option);
+      answerOptions.appendChild(button);
+    });
+
+    // Show/hide Prev button depending on question index
+    document.getElementById("prev-button").style.display = currentIndex > 0 ? 'inline-block' : 'none';
+    
+    // Always show Next button unless last question
+    if (currentIndex === subjectProblems.length - 1) {
+      document.getElementById("next-button").style.display = 'none';
+    } else {
+      document.getElementById("next-button").style.display = 'inline-block';
+    }
+
+  } else {
+    document.getElementById("question-container").innerHTML = "<h2>Congratulations! You've completed the practice!</h2>";
+  }
+}
+
+function nextQuestion() {
+  currentIndex++;
+  showQuestion();
+}
+
+function prevQuestion() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    showQuestion();
+  }
+}
+
 function goHome() {
   // Hide the question container
   document.getElementById("question-container").style.display = "none";

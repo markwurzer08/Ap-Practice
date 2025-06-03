@@ -207,16 +207,42 @@ const problems = {
   ],
   precalc: [
     {
-      question: "What is the value of sin(45°)?",
-      options: ["√2 / 2", "1 / 2", "√3 / 2", "1"],
-      answer: "√2 / 2"
+      question:"A polynomical function p is given by p(x) = -x(x-4)(x+2). What are all intervals on which p(x) ≥ 0?",
+      options:["A. [-2,4]","B. [-2,0] ∪ [4,∞]","C. (-∞,-4] ∪ [0,2]","D. (-∞,-2] ∪ [0,4]"],
+      answer: "D. (-∞,-2] ∪ [0,4]"
     },
     {
-      question: "What is the domain of the function f(x) = 1 / (x - 2)?",
-      options: ["x ≠ 2", "x > 2", "x ≤ 2", "x ≠ 0"],
-      answer: "x ≠ 2"
+      question:"The figure shows the graph of a function f. The zero and extrema for f are labeled, and the point of inflection of the graph of f is labeled. Let A,B,C,D, and E represent the x-coordinates at those points. Of the following, on which interval is f increasing and the graph of f concave down?",
+      image:"https://i.imgur.com/NGR4Ocd.png",
+      options:["A. The interval from A to B","B. The interval from B to C","C. The interval from C to D","D. The interval from D to E"],
+      answer: "A. The interval from A to B"
+    },
+    {
+      question:"Let x and y be positive constants. Which of the following is equivalent to 2ln(x)-3ln(y)?",
+      options:["A. ln(x²/y³)","B. ln(x²y³)","C. ln(2x-3y)","D. ln(2x/3y)"],
+      answer:"A. ln(x²/y³)"
+    },
+    {
+      question: "The polynomial function p is given by p(x) = (x+3)(x²-2x-15). Which of the following describes the zeros of p?",
+      options: ["A. p has exactly two distinct real zeros","B. p has exactly three distinct real zeros","C. p has exactly one distinct real zero and no non-real zeros","D. p has exactly one distinct real zero and two non-real zeros"],
+      answer: "A. p has exactly two distinct real zeros"
+    },
+    {
+      question: "Let f be a sinusoidal function. The graph of y = f(x) is given in the xy-plane. What is the period of f?",
+      image:"https://i.imgur.com/4ym5FiZ.png",
+      options: ["A. 2","B. 3","C. 4","D. 6"],
+      answer:"C. 4"
+    },
+    {
+      question: "The exponential function f is defined by f(x) = abˣ, where a and b are positive constants. The table gives values of f(x) at selected values of x. Which of the following statements is true?",
+      image:"https://i.imgur.com/nX3ogVh.png",
+      options:["A. f demonstrates exponential decay because a>0 and 0<b<1","B. f demonstrates exponential decay because a>0 and b>1","f demonstrates exponential growth because a>0 and 0<b<1","f demonstrates exponential growth because a>0 and b>1"],
+      answer:"D. f demonstrates exponential growth because a>0 and b>1"
     }
-  ]
+               
+
+ 
+  ] 
 };
 
 // Current question data

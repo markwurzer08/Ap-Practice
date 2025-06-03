@@ -236,7 +236,7 @@ const problems = {
     {
       question: "The exponential function f is defined by f(x) = abˣ, where a and b are positive constants. The table gives values of f(x) at selected values of x. Which of the following statements is true?",
       image:"https://i.imgur.com/nX3ogVh.png",
-      options:["A. f demonstrates exponential decay because a>0 and 0<b<1","B. f demonstrates exponential decay because a>0 and b>1","f demonstrates exponential growth because a>0 and 0<b<1","f demonstrates exponential growth because a>0 and b>1"],
+      options:["A. f demonstrates exponential decay because a>0 and 0<b<1","B. f demonstrates exponential decay because a>0 and b>1","C. f demonstrates exponential growth because a>0 and 0<b<1","D. f demonstrates exponential growth because a>0 and b>1"],
       answer:"D. f demonstrates exponential growth because a>0 and b>1"
     }
                

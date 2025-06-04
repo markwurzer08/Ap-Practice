@@ -13,6 +13,7 @@ header {
   padding: 10px 0;
   text-align: center;
 }
+
 header a {
   color: black;
   text-decoration: none;
@@ -22,7 +23,7 @@ header a {
 }
 
 header a:hover {
-  font-weight: 5000; /* Even bolder on hover */
+  font-weight: 800; /* Bolder on hover */
   text-decoration: underline;
 }
 
@@ -30,18 +31,17 @@ header h1 {
   margin: 0;
 }
 
+/* Footer aligned to right 2/3 */
 footer {
- 
   color: black;
   text-align: center;
   padding: 1px;
   position: fixed;
   bottom: 0;
   height: 7%;
-  width: 85%; /* Right 2/3 of the screen */
-  right: 0; /* Align it to the right side */
+  width: 66.66%; /* Right 2/3 */
+  right: 0;
 }
-
 
 /* Subject buttons */
 #choose-subject {
@@ -85,86 +85,65 @@ footer {
 /* Question image */
 #question-image {
   margin: 1em 0;
-  im:left;
-}
-
-#question-image img {
-  max-width: 100px;
-  width: 22%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-#question-image img {
-  display: block;
-  margin: 1em 0;
-  max-width: 100%;
-  height: auto;
   text-align: left;
 }
-#question-image img {
-  height: 150px;   /* or whatever height you want */
-  width: 250px;     /* keep the aspect ratio */
-  object-fit: contain; /* optional: ensures image fits nicely */
-}
 
+#question-image img {
+  height: 250px;
+  width: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+}
 
 /* Answer buttons */
 #answer-options button {
   display: block;
   margin: 10px 0;
-  padding: 10px;
+  padding: 10px 20px;
   width: 100%;
   max-width: 500px;
+  min-width: 150px;
+  text-align: left;
   font-size: 16px;
   border: 1px solid #ccc;
   background-color: #f0f0f0;
   border-radius: 4px;
   cursor: pointer;
+  box-sizing: border-box;
 }
-
 
 
 #answer-options button:hover {
   background-color: #ddd;
 }
-.nav-button {
-  background-color: #4CAF50; /* Green background */
-  color: white;             /* White text */
-  border: none;             /* No border */
-  padding: 10px 20px;       /* Padding */
-  font-size: 16px;          /* Font size */
-  border-radius: 5px;       /* Rounded corners */
-  cursor: pointer;          /* Pointer cursor on hover */
-  transition: background-color 0.3s ease, font-weight 0.3s ease;
-}
 
-.nav-button:hover {
-  background-color: #45a049; /* Darker green on hover */
-  font-weight: bold;          /* Bold text on hover */
-}
-
-.nav-button:disabled {
-  background-color: #ccc;     /* Gray background when disabled */
-  cursor: not-allowed;        /* Disabled cursor */
-  color: #666;                /* Darker gray text */
-}
-
-
-
-
-/* Next button */
+/* Navigation & Next buttons */
+.nav-button,
 #next-button {
+  min-width: 150px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
   background-color: #4CAF50;
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px;
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+  font-weight: 600;
+  box-sizing: border-box;
 }
 
-
+.nav-button:hover,
 #next-button:hover {
   background-color: #45a049;
+  font-weight: 800;
+}
+
+.nav-button:disabled,
+#next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
 }

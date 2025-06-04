@@ -238,7 +238,36 @@ const problems = {
       image:"https://i.imgur.com/nX3ogVh.png",
       options:["A. f demonstrates exponential decay because a>0 and 0<b<1","B. f demonstrates exponential decay because a>0 and b>1","C. f demonstrates exponential growth because a>0 and 0<b<1","D. f demonstrates exponential growth because a>0 and b>1"],
       answer:"D. f demonstrates exponential growth because a>0 and b>1"
+    },
+    {
+      question:"The table shows values for a function g at selected values of x. Which of the following is the best fit for a model for the data?",
+      image:"https://i.imgur.com/e4uX6yq.png",
+      options:["A. Linear","B. Quadratic","C. Exponential","D. Logarithmic"],
+      answer:"B. Quadratic"
+    },
+    {
+      question:"The function g is given by g(x) = 7sin(2x). Which of the following is an equivalent form for g(x)?",
+      options:["A. g(x) = 14cos(x)sin(x)","B. g(x) = (7cos(x))(7sin(x))","C. 7cos²(x)-7sin²x","D. g(x) = 7-14sin²x"],
+      answer:"A. g(x) = 14cos(x)sin(x)"
+    },
+    {
+      question: "The function f is given by f(x) = 3x²+2x+1. The graph of which of the following functions is the image of the graph of f after a vertical dilation of the graph of f by a facotr of 2?",
+      options:["A. m(x) 12x²+4x+1","B. k(x) = 6x²+4x+2","C. p(x) = 3(x+2)²+2(x+2)+1","D. 3x²+2x+3"],
+      answer:"B. k(x) = 6x²+4x+2"
+    },
+    {
+      question: "The table gives values for the function f and g at selected values of x. Functions f and g are defined for all real numbers. Let h be the function defined by h(x) = f(g(x)). What is the value of h(0)?",
+      image:"https://i.imgur.com/hHkCdLV.png",
+      options:["A. -2","B. -1","C. 0","D. 2"],
+      answer:"A. -2"
+    },
+    {
+      question:"Let f be a rational function that is graphed in the xy-plane. Consider x=1 and x=7. The polynomial in the numerator of f has a zero at x=1 and does not have a zero at x=7. The polynomial in the denominator of f has zeros at both x=1 and x=7. The multiplicities of the zeros at x=1 in the numerator and in the denominator are equal. Which of the following statements is true?",
+      options:["A. The graph of f has holes at both x=1 and x=7","B. The graph of f has a hole at x=1 and a vertical asymptote at x=7","C. The graph of f has a hole at x=1 and a vertical asymptote at x=7","D. The graph of f has a vertical asymptote at both x=1 and x=7"],
+      answer:"C. The graph of f has a hole at x=1 and a vertical asymptote at x=7"
     }
+        
+        
                
 
  

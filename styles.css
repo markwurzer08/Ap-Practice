@@ -95,6 +95,11 @@ footer {
   display: block;
   margin: 0;
 }
+#graph-img {
+  width: 300px;
+  height: auto;
+}
+
 
 /* Answer buttons */
 #answer-options button {

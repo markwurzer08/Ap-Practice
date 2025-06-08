@@ -1,3 +1,4 @@
+<!--Version 1.00-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AP Practice</title>
   <link rel="stylesheet" href="styles.css" />
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3RTVVTD0T1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3RTVVTD0T1');
-</script> 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RTVVTD0T1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3RTVVTD0T1');
+  </script> 
 </head>
 <body>
-
   <header>
- <h1><a href="#" onclick="goHome()">AP Practice</a></h1>
+    <h1><a href="#" onclick="goHome()">AP Practice</a></h1>
   </header>
 
   <div id="choose-subject">
@@ -33,25 +32,17 @@
 
   <div id="question-container" style="display: none;">
     <h2 id="question-title">Welcome! Choose a subject to start.</h2>
-    <div id="question-text"></div>
+    <p id="question-text"></p>
     <div id="question-image" style="margin: 1em 0;"></div>
-  
+    <div id="answer-options"></div>
+    <div id="navigation-buttons" style="margin-top: 20px; display: flex; gap: 10px;">
+      <button id="prev-button" class="nav-button" onclick="prevQuestion()" style="display:none;">Previous Question</button>
+      <button id="next-button" class="nav-button" onclick="nextQuestion()" style="display:none;">Next Question</button>
     </div>
-  <div id="answer-options"></div>
-<div id="navigation-buttons" style="margin-top: 20px; display: flex; gap: 10px;">
-  <button id="prev-button" class="nav-button" onclick="prevQuestion()" style="display:none;">Previous Question</button>
-<button id="next-button" class="nav-button" onclick="nextQuestion()" style="display:none;">Next Question</button>
-
-  </div>
-
-</div>
-
-</div>
-
   </div>
 
   <footer>
-    <p>&copy; 2025 AP Practice Problems. All Rights Reserved.</p>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
   </footer>
 
   <script src="app.js"></script>

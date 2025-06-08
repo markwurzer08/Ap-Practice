@@ -1,4 +1,4 @@
-//Version 1.00
+//Version 1.01
 const problems = {
   physics: [
     {
@@ -342,9 +342,22 @@ function goHome() {
     <p id="question-text"></p>
     <div id="question-image"></div>
     <div id="answer-options"></div>
-    <button id="prev-button" style="display: none;">Previous</button>
-    <button id="next-button" style="display: none;">Next</button>
+    <div id="navigation-buttons" style="margin-top: 20px; display: flex; gap: 10px;">
+      <button id="prev-button" class="nav-button" style="display: none;">Previous Question</button>
+      <button id="next-button" class="nav-button" style="display: none;">Next Question</button>
+    </div>
   `;
+
+  // Reattach event listeners to navigation buttons
+  const prevButton = document.getElementById("prev-button");
+  const nextButton = document.getElementById("next-button");
+  if (prevButton && nextButton) {
+    prevButton.onclick = prevQuestion;
+    nextButton.onclick = nextQuestion;
+    console.log("Event listeners reattached to prev-button and next-button");
+  } else {
+    console.error("Failed to find prev-button or next-button after goHome reset");
+  }
 
   // Show the subject selection screen
   document.getElementById("choose-subject").style.display = "block";

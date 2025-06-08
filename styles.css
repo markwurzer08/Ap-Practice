@@ -1,4 +1,4 @@
-/*Version 1.00*/
+/*Version 1.01*/
 /* General styles */
 body {
   font-family: Arial, sans-serif;
@@ -81,30 +81,29 @@ footer {
   margin: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Question image */
-#question-image {
-  margin: 1em 0;
-  text-align: left;
+/* Question title and text */
+#question-title,
+#question-text {
+  flex: 1 1 100%; /* Full width for title and text */
 }
 
-#question-image img {
-  height: 250px;
-  width: 200px;
-  object-fit: contain;
-  display: block;
-  margin: 0;
+/* Answer options */
+#answer-options {
+  flex: 1 1 50%; /* Take up to half the width, adjust as needed */
+  max-width: 500px;
+  order: 1; /* Ensure answer-options appears on the left */
 }
 
-/* Answer buttons */
 #answer-options button {
   display: block;
   margin: 10px 0;
   padding: 10px 20px;
   width: 100%;
-  max-width: 500px;
-  min-width: 150px;
   text-align: left;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -118,7 +117,30 @@ footer {
   background-color: #ddd;
 }
 
+/* Question image */
+#question-image {
+  flex: 1 1 200px; /* Minimum width to match image width, adjust as needed */
+  order: 2; /* Ensure image appears on the right */
+  text-align: right;
+}
+
+#question-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px; /* Maintain max height for consistency */
+  display: block;
+  margin: 0;
+}
+
 /* Navigation & Next buttons */
+#navigation-buttons {
+  flex: 1 1 100%; /* Full width for navigation buttons */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .nav-button,
 #next-button {
   min-width: 150px;
@@ -146,4 +168,19 @@ footer {
   background-color: #ccc;
   cursor: not-allowed;
   color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #answer-options,
+  #question-image {
+    flex: 1 1 100%; /* Stack vertically on smaller screens */
+    text-align: center; /* Center align for better mobile display */
+  }
+  #question-image {
+    order: 1; /* Image on top */
+  }
+  #answer-options {
+    order: 2; /* Answers below image */
+  }
 }

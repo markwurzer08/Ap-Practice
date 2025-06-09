@@ -194,7 +194,21 @@ const problems = {
       image: "https://i.imgur.com/MsgHScI.png",
       options: ["A. The spring does positive work on the system", "B. The total energy of the system is constant", "C. The spring does negative work on the system", "D. The total energy of the system decreases"],
       answer: "D. The total energy of the system decreases"
+    },
+    {
+      question:"A graph of the angle between a pendulum and the vertical is shown in the figure below. The frequency of the pendulum is most nearly",
+      image:"https://i.imgur.com/G8EAIZ3.png",
+      options:["A. 0.25 Hz","B. 0.38 Hz","C. 1 Hz", "D. 2.67 Hz"],
+      answer:"B. 0.38 Hz"
+    },
+    {
+      question:"A ball is submerged and floating at rest in a liquid as shown in the figure below. The ball is attached to the bottom of the container by a string. The desnity of the liquid ρ₀, the density of the ball is ρ₁, and the volume of the ball is V₁. Which of the following is a correct expression for the tension in the string T?",
+      image:"https://i.imgur.com/Ha99GU2.png",
+      options:["A. ρ₁V₁g + ρ₀V₁g","B. ρ₁V₁g - ρ₀V₁g","C. ρ₀V₁g - ρ₁V₁g","D. ρ₀V₁g"],
+      answer:"C. ρ₀V₁g - ρ₁V₁g"
     }
+              
+      
   ],
   precalc: [
     {

@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -110,4 +109,67 @@ header h1 {
 #answer-options button.image-option {
   padding: 5px;
   display: flex;
-  justify
+  justify-content: center;
+  align-items: center;
+}
+
+#answer-options button.image-option img {
+  max-width: 200px;
+  max-height: 50px;
+  height: auto;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  margin: 5px;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+#home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+}
+
+#home-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  #question-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #answer-options {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  #question-image {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #home-button {
+    position: static;
+    margin-bottom: 20px;
+    width: fit-content;
+  }
+}

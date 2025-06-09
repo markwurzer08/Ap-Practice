@@ -256,6 +256,32 @@ const problems = {
       question: "Let f be a rational function that is graphed in the xy-plane. Consider x=1 and x=7. The polynomial in the numerator of f has a zero at x=1 and does not have a zero at x=7. The polynomial in the denominator of f has zeros at both x=1 and x=7. The multiplicities of the zeros at x=1 in the numerator and in the denominator are equal. Which of the following statements is true?",
       options: ["A. The graph of f has holes at both x=1 and x=7", "B. The graph of f has a hole at x=1 and a vertical asymptote at x=7", "C. The graph of f has a hole at x=1 and a vertical asymptote at x=7", "D. The graph of f has a vertical asymptote at both x=1 and x=7"],
       answer: "C. The graph of f has a hole at x=1 and a vertical asymptote at x=7"
+    },
+    {
+      question: "The polynomial function k is given by k(x) = ax⁴-bx³+15, where a nd b are nonzero real constants. Each of the zeros of k has a multiplicity 1. In the xy-plane, an x-intercept of the graph of k is (17.997,0). A zero of k is -0.478 - 0.801i. Which of the following statements must be true?",
+      options:["A. The graph of k has three x-intercepts","B. -0.479 + 0.801i is a zero of k","C. The equation k(x) = 0 has four real solutions","D. The graph of k is tanget to the x-axis at x = 17.997"],
+      answer:"B. -0.478 + 0.801i is a zero of k"
+    },
+    {
+      question:"Consider the functions f and g given by f(x) = log(x-1) + log(X+3) and g(x) = log(x+9). In the xy-plane, what are all the x-coordinates of the points of intersection of the graphs of f and g.",
+      options:["A. x=3 only","B. x=7", "C. x=-4 and x=3","D. x=-7 and x=-4"],
+      answer:"A. x=3 only"
+    },
+    {
+      question:"What are all values of θ, for 0 ≤ θ < 2π, where 2sin²(θ) = -sin(θ)?",
+      options:["A. 0, π, π/6, 5π/6","B. 0, π, 7π/6, and 11π/6","C. π/2, 3π/2, π/3, and 5π/3","D. π/2, 3π/2, 2π/3, and 4π/3"],
+      answer:"B. 0, π, 7π/6, and 11π/6"
+    },
+    {
+      question:"The figure shows the graph of the polar function r = f(θ), where f(θ) = 4cos(2θ), in the polar coordinate system for θ ≤ 0 ≤ 2π. There are five points labeled A, B, C, D, and E. If the domain of f is restricted to 0 ≤ θ ≤ π/2, the portion of the given graph that remains consists of two pieces. One of those pieces is the portion of the graph in Quadrant I from C to E.",
+      image: "https://i.imgur.com/kowSAf0.png",
+      options:["A. The portion of the graph in Quadrant I from E to B","B. The portion of the graph in Quadrant II from E to A","C. The portion of the graph in Quadrant III from E to A","D. The portion of the graph in Quadrant III from E to D"],
+      answer:"B. The portion of the graph in Quadrant II from E to A"
+    },
+    {
+      question:"A physical therapy center has a bicycle that patients use for exercise. The height, in inches (in), of the bicycle pedal above level fround periodically increases and decreases when used. The figure gives the position of the pedal P at a height of 12 inches above the ground at time t = 0 seconds. The pedal's 8-inch arm defines the circular motion of the pedal. If the patient pedals 1 revolution per second, which of the following could be an expression for h(t), the height, in inches, of the bicycle pedal above the level ground at time t seconds?",
+      options:["A. 8 - 12sin(t)","B. 12 - 8sin(t)","C. 8 - 12sin(2πt)","D. 12 - 8sin(2πt)"],
+      answer: "D. 12 - 8sin(2πt)"
     }
   ]
 };

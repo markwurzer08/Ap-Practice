@@ -132,6 +132,13 @@ footer {
   display: block;
   margin: 0;
 }
+#answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  padding: 10px;
+}
 
 /* Navigation & Next buttons */
 #navigation-buttons {

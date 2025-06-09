@@ -372,8 +372,6 @@ function prevQuestion() {
     currentIndex--;
     showQuestion();
   }
-}
-
 function goHome() {
   // Hide the question container and clear its content
   const questionContainer = document.getElementById("question-container");

@@ -133,10 +133,8 @@ footer {
   margin: 0;
 }
 #answer-options {
-  display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 250px;
+  width: auto;
   padding: 10px;
 }
 

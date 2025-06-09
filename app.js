@@ -1,7 +1,17 @@
-//Version 1.05
+//Version 1.07
 const problems = {
   physics: [
- 
+    {
+      question: "A tube contains a volume of water and a volume of mercury as shown in the figure above. Both ends of the tube are open. Points A and B are at the same level and points C and D are at the same level. The distance between points A and B and the surface of the liquids are shown. Which of the following correctly relates the gauge pressures at the points shown? The density of the water is 1,000 kg/m³ and the density of the mercury is 13,600 kg/m³.",
+      image: "https://i.imgur.com/J2e6UnT.png",
+      options: [
+        { url: "https://i.imgur.com/1t7rW3e.png", label: "A. Pₐ > Pᵦ and P꜀ > P𝒟" },
+        { url: "https://i.imgur.com/2u8sX4f.png", label: "B. Pₐ > Pᵦ and P꜀ = P𝒟" },
+        { url: "https://i.imgur.com/3v9tY5g.png", label: "C. Pₐ = Pᵦ and P꜀ = P𝒟" },
+        { url: "https://i.imgur.com/4w0uZ6h.png", label: "D. Pₐ = Pᵦ and P꜀ > P𝒟" }
+      ],
+      answer: "B. Pₐ > Pᵦ and P꜀ = P𝒟"
+    },
     {
       question: "A satellite is in a circular orbit around the Earth and moves at a constant speed. If the height of the orbit above the surface of the Earth increased (and the orbit remained circular), the kinetic energy of the satellite would:",
       image: "https://i.imgur.com/3orBZ8B.png",
@@ -180,7 +190,7 @@ const problems = {
       answer: "B. Block B"
     },
     {
-      question: "A block is sliding across a surface where the friction is not negligible. The block has an initial speed of v₀ at time t₀. The block then collides with a spring and momentarily comes to a stop at time t₁. Which of the following is true about the block spring system from time t₀ and time t₁?",
+      question: "A block is sliding across a surface where the friction is not negligible. The block has an initial speed of v₀ at time t₀. The block then collides with a spring and momentarily comes to a stop at time t₁. Which of the following is true about the block spring system from time t₀ to t₁?",
       image: "https://i.imgur.com/MsgHScI.png",
       options: ["A. The spring does positive work on the system", "B. The total energy of the system is constant", "C. The spring does negative work on the system", "D. The total energy of the system decreases"],
       answer: "D. The total energy of the system decreases"
@@ -372,38 +382,59 @@ function prevQuestion() {
     currentIndex--;
     showQuestion();
   }
+}
+
 function goHome() {
   // Hide the question container and clear its content
   const questionContainer = document.getElementById("question-container");
-  questionContainer.style.display = "none";
-  questionContainer.innerHTML = `
-    <h2 id="question-title"></h2>
-    <p id="question-text"></p>
-    <div id="question-image"></div>
-    <div id="answer-options"></div>
-    <div id="navigation-buttons" style="margin-top: 20px; display: flex; gap: 10px;">
-      <button id="prev-button" class="nav-button" style="display: none;">Previous Question</button>
-      <button id="next-button" class="nav-button" style="display: none;">Next Question</button>
-    </div>
-  `;
+  if (questionContainer) {
+    questionContainer.style.display = "none";
+    questionContainer.innerHTML = `
+      <h2 id="question-title"></h2>
+      <p id="question-text"></p>
+      <div id="question-image"></div>
+      <div id="answer-options"></div>
+      <div id="navigation-buttons" style="margin-top: 20px; display: flex; gap: 10px;">
+        <button id="prev-button" class="nav-button" style="display: none;">Previous Question</button>
+        <button id="next-button" class="nav-button" style="display: none;">Next Question</button>
+      </div>
+    `;
+  } else {
+    console.error("question-container not found");
+  }
 
   // Reattach event listeners to navigation buttons
   const prevButton = document.getElementById("prev-button");
   const nextButton = document.getElementById("next-button");
   if (prevButton && nextButton) {
-    prevButton.onclick = prevQuestion;
-    nextButton.onclick = nextQuestion;
-    console.log("Event listeners reattached to prev-button and next-button");
+    prevButton.addEventListener("click", prevQuestion);
+    nextButton.addEventListener("click", nextQuestion);
+    console.log("Event listeners attached to prev-button and next-button");
   } else {
-    console.error("Failed to find prev-button or next-button after goHome reset");
+    console.error("Failed to find prev-button or next-button");
   }
 
   // Show the subject selection screen
-  document.getElementById("choose-subject").style.display = "block";
+  const chooseSubject = document.getElementById("choose-subject");
+  if (chooseSubject) {
+    chooseSubject.style.display = "block";
+  } else {
+    console.error("choose-subject not found");
+  }
 
   // Reset question state
   currentSubject = null;
   currentIndex = 0;
   currentProblem = null;
 }
-}
+
+// Bind home button on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const homeButton = document.getElementById("home-button");
+  if (homeButton) {
+    homeButton.addEventListener("click", goHome);
+    console.log("Home button event listener attached");
+  } else {
+    console.error("home-button not found");
+  }
+});

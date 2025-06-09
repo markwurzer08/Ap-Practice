@@ -406,3 +406,4 @@ function goHome() {
   currentIndex = 0;
   currentProblem = null;
 }
+}

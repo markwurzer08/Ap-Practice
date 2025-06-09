@@ -1,14 +1,14 @@
-//Version 1.02
+//Version 1.04
 const problems = {
   physics: [
     {
       question: "A tube contains a volume of water and a volume of mercury as shown in the figure above. Both ends of the tube are open. Points A and B are at the same level and points C and D are at the same level. The distance between points A and B and the surface of the liquids are shown. Which of the following correctly relates the gauge pressures at the points shown? The density of the water is 1,000 kg/m³ and the density of the mercury is 13,600 kg/m³.",
       image: "https://i.imgur.com/J2e6UnT.png",
       options: [
-        "A. Pₐ > Pᵦ and P꜀ > P𝒟",
-        "B. Pₐ > Pᵦ and P꜀ = P𝒟",
-        "C. Pₐ = Pᵦ and P꜀ = P𝒟",
-        "D. Pₐ = Pᵦ and P꜀ > P𝒟"
+        { url: "https://via.placeholder.com/200x50.png?text=A", label: "A. Pₐ > Pᵦ and P꜀ > P𝒟" },
+        { url: "https://via.placeholder.com/200x50.png?text=B", label: "B. Pₐ > Pᵦ and P꜀ = P𝒟" },
+        { url: "https://via.placeholder.com/200x50.png?text=C", label: "C. Pₐ = Pᵦ and P꜀ = P𝒟" },
+        { url: "https://via.placeholder.com/200x50.png?text=D", label: "D. Pₐ = Pᵦ and P꜀ > P𝒟" }
       ],
       answer: "B. Pₐ > Pᵦ and P꜀ = P𝒟"
     },
@@ -196,23 +196,21 @@ const problems = {
       answer: "D. The total energy of the system decreases"
     },
     {
-      question:"A graph of the angle between a pendulum and the vertical is shown in the figure below. The frequency of the pendulum is most nearly",
-      image:"https://i.imgur.com/G8EAIZ3.png",
-      options:["A. 0.25 Hz","B. 0.38 Hz","C. 1 Hz", "D. 2.67 Hz"],
-      answer:"B. 0.38 Hz"
+      question: "A graph of the angle between a pendulum and the vertical is shown in the figure below. The frequency of the pendulum is most nearly",
+      image: "https://i.imgur.com/G8EAIZ3.png",
+      options: ["A. 0.25 Hz", "B. 0.38 Hz", "C. 1 Hz", "D. 2.67 Hz"],
+      answer: "B. 0.38 Hz"
     },
     {
-      question:"A ball is submerged and floating at rest in a liquid as shown in the figure below. The ball is attached to the bottom of the container by a string. The desnity of the liquid ρ₀, the density of the ball is ρ₁, and the volume of the ball is V₁. Which of the following is a correct expression for the tension in the string T?",
-      image:"https://i.imgur.com/Ha99GU2.png",
-      options:["A. ρ₁V₁g + ρ₀V₁g","B. ρ₁V₁g - ρ₀V₁g","C. ρ₀V₁g - ρ₁V₁g","D. ρ₀V₁g"],
-      answer:"C. ρ₀V₁g - ρ₁V₁g"
+      question: "A ball is submerged and floating at rest in a liquid as shown in the figure below. The ball is attached to the bottom of the container by a string. The density of the liquid ρ₀, the density of the ball is ρ₁, and the volume of the ball is V₁. Which of the following is a correct expression for the tension in the string T?",
+      image: "https://i.imgur.com/Ha99GU2.png",
+      options: ["A. ρ₁V₁g + ρ₀V₁g", "B. ρ₁V₁g - ρ₀V₁g", "C. ρ₀V₁g - ρ₁V₁g", "D. ρ₀V₁g"],
+      answer: "C. ρ₀V₁g - ρ₁V₁g"
     }
-              
-      
   ],
   precalc: [
     {
-      question: "A polynomical function p is given by p(x) = -x(x-4)(x+2). What are all intervals on which p(x) ≥ 0?",
+      question: "A polynomial function p is given by p(x) = -x(x-4)(x+2). What are all intervals on which p(x) ≥ 0?",
       options: ["A. [-2,4]", "B. [-2,0] ∪ [4,∞]", "C. (-∞,-4] ∪ [0,2]", "D. (-∞,-2] ∪ [0,4]"],
       answer: "D. (-∞,-2] ∪ [0,4]"
     },
@@ -272,29 +270,29 @@ const problems = {
       answer: "C. The graph of f has a hole at x=1 and a vertical asymptote at x=7"
     },
     {
-      question: "The polynomial function k is given by k(x) = ax⁴-bx³+15, where a nd b are nonzero real constants. Each of the zeros of k has a multiplicity 1. In the xy-plane, an x-intercept of the graph of k is (17.997,0). A zero of k is -0.478 - 0.801i. Which of the following statements must be true?",
-      options:["A. The graph of k has three x-intercepts","B. -0.479 + 0.801i is a zero of k","C. The equation k(x) = 0 has four real solutions","D. The graph of k is tanget to the x-axis at x = 17.997"],
-      answer:"B. -0.478 + 0.801i is a zero of k"
+      question: "The polynomial function k is given by k(x) = ax⁴-bx³+15, where a and b are nonzero real constants. Each of the zeros of k has a multiplicity 1. In the xy-plane, an x-intercept of the graph of k is (17.997,0). A zero of k is -0.478 - 0.801i. Which of the following statements must be true?",
+      options: ["A. The graph of k has three x-intercepts", "B. -0.478 + 0.801i is a zero of k", "C. The equation k(x) = 0 has four real solutions", "D. The graph of k is tangent to the x-axis at x = 17.997"],
+      answer: "B. -0.478 + 0.801i is a zero of k"
     },
     {
-      question:"Consider the functions f and g given by f(x) = log(x-1) + log(X+3) and g(x) = log(x+9). In the xy-plane, what are all the x-coordinates of the points of intersection of the graphs of f and g.",
-      options:["A. x=3 only","B. x=7", "C. x=-4 and x=3","D. x=-7 and x=-4"],
-      answer:"A. x=3 only"
+      question: "Consider the functions f and g given by f(x) = log(x-1) + log(x+3) and g(x) = log(x+9). In the xy-plane, what are all the x-coordinates of the points of intersection of the graphs of f and g.",
+      options: ["A. x=3 only", "B. x=7", "C. x=-4 and x=3", "D. x=-7 and x=-4"],
+      answer: "A. x=3 only"
     },
     {
-      question:"What are all values of θ, for 0 ≤ θ < 2π, where 2sin²(θ) = -sin(θ)?",
-      options:["A. 0, π, π/6, 5π/6","B. 0, π, 7π/6, and 11π/6","C. π/2, 3π/2, π/3, and 5π/3","D. π/2, 3π/2, 2π/3, and 4π/3"],
-      answer:"B. 0, π, 7π/6, and 11π/6"
+      question: "What are all values of θ, for 0 ≤ θ < 2π, where 2sin²(θ) = -sin(θ)?",
+      options: ["A. 0, π, π/6, 5π/6", "B. 0, π, 7π/6, and 11π/6", "C. π/2, 3π/2, π/3, and 5π/3", "D. π/2, 3π/2, 2π/3, and 4π/3"],
+      answer: "B. 0, π, 7π/6, and 11π/6"
     },
     {
-      question:"The figure shows the graph of the polar function r = f(θ), where f(θ) = 4cos(2θ), in the polar coordinate system for θ ≤ 0 ≤ 2π. There are five points labeled A, B, C, D, and E. If the domain of f is restricted to 0 ≤ θ ≤ π/2, the portion of the given graph that remains consists of two pieces. One of those pieces is the portion of the graph in Quadrant I from C to E.",
+      question: "The figure shows the graph of the polar function r = f(θ), where f(θ) = 4cos(2θ), in the polar coordinate system for θ ≤ 0 ≤ 2π. There are five points labeled A, B, C, D, and E. If the domain of f is restricted to 0 ≤ θ ≤ π/2, the portion of the given graph that remains consists of two pieces. One of those pieces is the portion of the graph in Quadrant I from C to E.",
       image: "https://i.imgur.com/kowSAf0.png",
-      options:["A. The portion of the graph in Quadrant I from E to B","B. The portion of the graph in Quadrant II from E to A","C. The portion of the graph in Quadrant III from E to A","D. The portion of the graph in Quadrant III from E to D"],
-      answer:"B. The portion of the graph in Quadrant II from E to A"
+      options: ["A. The portion of the graph in Quadrant I from E to B", "B. The portion of the graph in Quadrant II from E to A", "C. The portion of the graph in Quadrant III from E to A", "D. The portion of the graph in Quadrant III from E to D"],
+      answer: "B. The portion of the graph in Quadrant II from E to A"
     },
     {
-      question:"A physical therapy center has a bicycle that patients use for exercise. The height, in inches (in), of the bicycle pedal above level fround periodically increases and decreases when used. The figure gives the position of the pedal P at a height of 12 inches above the ground at time t = 0 seconds. The pedal's 8-inch arm defines the circular motion of the pedal. If the patient pedals 1 revolution per second, which of the following could be an expression for h(t), the height, in inches, of the bicycle pedal above the level ground at time t seconds?",
-      options:["A. 8 - 12sin(t)","B. 12 - 8sin(t)","C. 8 - 12sin(2πt)","D. 12 - 8sin(2πt)"],
+      question: "A physical therapy center has a bicycle that patients use for exercise. The height, in inches (in), of the bicycle pedal above level ground periodically increases and decreases when used. The figure gives the position of the pedal P at a height of 12 inches above the ground at time t = 0 seconds. The pedal's 8-inch arm defines the circular motion of the pedal. If the patient pedals 1 revolution per second, which of the following could be an expression for h(t), the height, in inches, of the bicycle pedal above the level ground at time t seconds?",
+      options: ["A. 8 - 12sin(t)", "B. 12 - 8sin(t)", "C. 8 - 12sin(2πt)", "D. 12 - 8sin(2πt)"],
       answer: "D. 12 - 8sin(2πt)"
     }
   ]
@@ -335,8 +333,21 @@ function showQuestion() {
     answerOptions.innerHTML = '';
     currentProblem.options.forEach(option => {
       const button = document.createElement("button");
-      button.textContent = option;
-      button.onclick = () => checkAnswer(option);
+      if (typeof option === 'string') {
+        // Text-based option
+        button.textContent = option;
+        button.onclick = () => checkAnswer(option);
+      } else {
+        // Image-based option
+        button.classList.add('image-option');
+        const img = document.createElement("img");
+        img.src = option.url;
+        img.alt = option.label;
+        img.style.maxWidth = '100%';
+        img.style.height = 'auto';
+        button.appendChild(img);
+        button.onclick = () => checkAnswer(option.label);
+      }
       answerOptions.appendChild(button);
     });
 
@@ -351,13 +362,13 @@ function showQuestion() {
     }
 
   } else {
-    document.getElementById("question-container").innerHTML = "<h2>Congratulations! You've completed the practice!</h2>";
+    document.getElementById("question-container").innerHTML = "<h5>Congrats! You've completed the practice!</h5>";
   }
 }
 
 function checkAnswer(selectedOption) {
   const isCorrect = selectedOption === currentProblem.answer;
-  alert(isCorrect ? "Correct!" : "Incorrect. The correct answer was: " + currentProblem.answer);
+  alert(isCorrect ? "Correct!" : "Incorrect. The answer was: " + currentProblem.answer);
   document.getElementById("next-button").style.display = 'inline-block';
 }
 

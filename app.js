@@ -344,7 +344,7 @@ const problems = {
     },
     {
       question:"The function f is given by f(x) = log₂(x). What is the input value in the domain of f yields an output value of 4?",
-      options:["A. 32","B. 16","C. 2"."D. 0.5"],
+      options:["A. 32","B. 16","C. 2","D. 0.5"],
       answer:"B. 16"
     },
     {

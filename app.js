@@ -294,7 +294,23 @@ const problems = {
       question: "A physical therapy center has a bicycle that patients use for exercise. The height, in inches (in), of the bicycle pedal above level ground periodically increases and decreases when used. The figure gives the position of the pedal P at a height of 12 inches above the ground at time t = 0 seconds. The pedal's 8-inch arm defines the circular motion of the pedal. If the patient pedals 1 revolution per second, which of the following could be an expression for h(t), the height, in inches, of the bicycle pedal above the level ground at time t seconds?",
       options: ["A. 8 - 12sin(t)", "B. 12 - 8sin(t)", "C. 8 - 12sin(2πt)", "D. 12 - 8sin(2πt)"],
       answer: "D. 12 - 8sin(2πt)"
+    },
+    {
+      question:"Consider the functions g and h given by g(x) = 4ˣ and h(x) = 16ˣ⁺². In the xy-plane, what is the x-coordiante of the point of intersection of the graphs of g and h?",
+      options:["A. -4","B. -2","C. 0","D. 2"],
+      answer:"A. -4"
+    },
+    {
+      question:"The function f is given by f(x) = log₂(x). What is the input value in the domain of f yields an output value of 4?",
+      options:["A. 32","B. 16","C. 2"."D. 0.5"],
+      answer:"B. 16"
+    },
+    {
+      question:"The function k is given by k(θ) = 2sin(θ). What are all values of θ, for 0 ≤ θ < 2π, where k(θ) = -1?",
+      options:["A. θ = π/6 and θ = 5π/6","B. θ = π/3 and θ = 5π/3","C. θ = 2π/3 and θ = 4π/3","D. θ = 7π/6 and θ = 11π/6"],
+      answer:"D. θ = 7π/6 and θ = 11π/6"
     }
+        
   ]
 };
 

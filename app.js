@@ -486,4 +486,4 @@ function goHome() {
   currentProblem = null;
 }
 
-);
+;

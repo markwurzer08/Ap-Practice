@@ -206,7 +206,49 @@ const problems = {
       image: "https://i.imgur.com/Ha99GU2.png",
       options: ["A. ρ₁V₁g + ρ₀V₁g", "B. ρ₁V₁g - ρ₀V₁g", "C. ρ₀V₁g - ρ₁V₁g", "D. ρ₀V₁g"],
       answer: "C. ρ₀V₁g - ρ₁V₁g"
+    },
+    {
+      question:"The figure shows a uniform meterstick that is set on a pivot at its center. A force of magnitude F is exerted on the meterstick. At which of the labeled positions must an upward force of magnitude 2F be exerted on the meterstick to keep the meterstick in rotational equilibrium?",
+      image:"https://i.imgur.com/ZDb4e7R.png",
+      options:["A. A","B. B","C. C","D. D"],
+      answer:"B. B"
+    },
+    {
+      question:"A solid prism in the shape of a right triangle as shown in Figure 1, can be placed in any of the three orientations shown in Figure 2. The prism is placed in a large tank containing a liquid and the prism sinks to the bottom of the tank. Fₓ is the magnitude of the buoyant force exerted on the prism by the liquid in the tank when the prism is in Orientation X. Fᵧ and Fz are the buoyant forces for orientations Y and Z. Which of the following correctly ranks the magnitude of the three buoyant forces?",
+      image:"https://i.imgur.com/3zbHQLa.png",
+      options:["A. Fᵧ < Fₓ < Fz","B. Fz < Fₓ < Fᵧ","C. (Fᵧ=Fₓ) < Fz","D. Fᵧ=Fₓ=Fz"],
+      answer:"D. Fᵧ=Fₓ=Fz"
+    },
+    {
+      question:"The velocity of an object as a function of time is shown in the graph. Which of the following is most nearly the average acceleration of the object?",
+      image:"https://i.imgur.com/r6m3BIW.png",
+      options:["A. 1.5 m/s²","B. 3 m/s²","C. 9 m/s²","D. 24 m/s²"],
+      answer:"A. 1.5 m/s²"
+    },
+    {
+      question:"Ball X is released from rest from a height H at time t = 0. At the same time, an identical ball, Ball Y is thrown straight up from the ground, as shown in the figure. At time t = t₁, Ball X is just above the ground and Ball Y is momentarily at rest at height H. Which of the following is a correct statement regarding the amount of mechanical energy in the system consisting of only one ball at time t = t₁?",
+      image:"https://i.imgur.com/wFcXZO7.png",
+      options:["A. The mechanical energy of Ball X and the mechanical energy of Ball Y are equal at t = t₁","B. The mechanical energy of Ball Y is greater than the mechanical energy of Ball X at time t = t₁","C. The mechanical energy of Ball X is greater than the mechanical energy of Ball Y at time t = t₁","D. The mechanical energy of the two balls cannot be compared without knowing the initial speed of the two balls"],
+      answer:"B. The mechanical energy of Ball Y is greater than the mechanical energy of Ball X at time t = t₁"
+    },
+    {
+      question:"Block 1 is attached to a stretched spring which is also attached to a wall as shown in the figure. Block 1 is released from rest from position +x and it oscillates in simple harmonic motion between positions +x and -x with a maximum kinetic energy K₁. Block 1 is replaced with Block 2 of mass 2m. Block 2 is also released from rest from position +x and Block 2 oscillates in simple harmonic motion between positions +x and -x with a maximum kinetic energy of K₂. Which of the following correctly compares K₁ and K₂?",
+      image:"https://i.imgur.com/iy0iaij.png",
+      options:["A. K₂ = 2K₁","B. K₂ = K₁","C. K₂ = (1/√2)(K₁)","D. K₂ = (1/2)(K₁)"],
+      answer:"B. K₂ = K₁"
+    },
+    { 
+      question:"A uniform disk, Disk A, of mass m and radius R rotates about an axis through the disk's geometric center as shown in Figure 1. The rotational inertia for the disk in this configuration is I = 1/2mR². An identical disk, disk B, rotates about an axis that passes through the edge of the disk, a radial distance R from the center of the disk as shown in Figure 2. The same torque is exerted on both disks, and disks A and B experience angular acceleration αₐ and αᵦ, respectively. Which of the following is a correct epxression for the ratio of the two angular accelerations, αᵦ/αₐ?",
+      image:"https://i.imgur.com/5SWZnk4.png",
+      options:["A. 1/3","B. 1/2","C. 2","D. 3"],
+      answer:"A. 1/3"
+    },
+    {
+      question:"An empty container with volume 0.02 m³ is placed on a scale, which then reads 10 N. An unknown liquid is then poured into the container until the container is completely full. The new reading on the scale in 170 N. Which of the following is most nearly the density ρ of the unknown liquid?",
+      options:["A. ρ = 800 kg/m³","B. ρ = 850 kg/m³","C. ρ = 8000 kg/m³","D. ρ = 8500 kg/m³"],
+      answer:"A. ρ = 800 kg/m³"
     }
+    
   ],
   precalc: [
     {

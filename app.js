@@ -486,13 +486,4 @@ function goHome() {
   currentProblem = null;
 }
 
-// Bind home button on page load
-document.addEventListener("DOMContentLoaded", () => {
-  const homeButton = document.getElementById("home-button");
-  if (homeButton) {
-    homeButton.addEventListener("click", goHome);
-    console.log("Home button event listener attached");
-  } else {
-    console.error("home-button not found");
-  }
 });

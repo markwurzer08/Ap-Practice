@@ -1,4 +1,4 @@
-/* Version 1.06 */
+/* Version 1.07 */
 /* General styles */
 body {
   font-family: Arial, sans-serif;
@@ -299,7 +299,6 @@ body.dark-mode footer {
 }
 
 }
-/* Dark mode toggle button (global, not just mobile) */
 #dark-mode-toggle {
   position: absolute;
   top: 10px;
@@ -319,3 +318,45 @@ body.dark-mode footer {
   color: #4CAF50;
 }
 
+  /* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode header {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+body.dark-mode header a.nav-button {
+  border-color: #f0f0f0;
+  color: #f0f0f0;
+}
+
+body.dark-mode header a.nav-button:hover {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+body.dark-mode #question-container,
+body.dark-mode #about-content {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode #answer-options button {
+  background-color: #333;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+body.dark-mode #answer-options button:hover {
+  background-color: #444;
+}
+
+body.dark-mode footer {
+  background-color: #222;
+  color: #ccc;
+}

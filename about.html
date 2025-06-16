@@ -30,5 +30,22 @@
       <p>If you have suggestions, feedback, or want to contribute questions, reach out at <strong>apstudyhelper@gmail.com</strong> or join my discord _____.</p>
     </section>
   </main>
+  <script>
+  const toggleButton = document.getElementById('dark-mode-toggle');
+
+  // Load saved preference
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    toggleButton.textContent = '☀️ Light Mode';
+  }
+
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+  });
+</script>
+
 </body>
 </html>

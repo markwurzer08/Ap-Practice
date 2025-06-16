@@ -1,5 +1,5 @@
 
-/*Version 1.01*/
+/*Version 1.02*/
 /* General styles */
 body {
   font-family: Arial, sans-serif;
@@ -10,11 +10,33 @@ body {
 }
 
 header {
+  position: relative;          /* make header a positioning context */
   background-color: #4CAF50;
   color: white;
   padding: 10px 0;
-  text-align: center;
+  text-align: center;          /* center contents by default */
 }
+
+/* Center the title */
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Style the title link */
+header h1 a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Position the About button in the top right */
+header a.nav-button {
+  position: absolute;
+  top: 10px;       /* adjust to vertically align */
+  right: 20px;     /* space from the right edge */
+}
+
 
 header a {
   color: black;

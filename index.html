@@ -1,4 +1,4 @@
-<!--Version 1.05-->
+<!--Version 1.06-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +8,11 @@
 <link rel="manifest" href="/site.webmanifest">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.documentElement.classList.add('dark-mode');
+  }
+</script>
   <title>AP Practice</title>
   <link rel="stylesheet" href="styles.css" />
   <!-- Google tag (gtag.js) -->

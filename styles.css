@@ -1,5 +1,4 @@
-
-/*Version 1.03*/
+/* Version 1.04 */
 /* General styles */
 body {
   font-family: Arial, sans-serif;
@@ -9,50 +8,43 @@ body {
   color: #333;
 }
 
+/* Header styles */
 header {
-  position: relative;          /* make header a positioning context */
+  position: relative;
   background-color: #4CAF50;
   color: white;
-  padding: 10px 0;
-  text-align: center;          /* center contents by default */
+  padding: 10px 20px;
+  text-align: center;
 }
 
-/* Center the title */
 header h1 {
   margin: 0;
   font-size: 1.8rem;
 }
 
-/* Style the title link */
 header h1 a {
   color: white;
   text-decoration: none;
   font-weight: 700;
 }
 
-/* Position the About button in the top right */
+/* "About" button (top right) */
 header a.nav-button {
   position: absolute;
-  top: 10px;       /* adjust to vertically align */
-  right: 20px;     /* space from the right edge */
-}
-
-
-header a {
-  color: black;
+  top: 10px;
+  right: 20px;
+  color: white;
   text-decoration: none;
-  cursor: pointer;
-  font-weight: 600; /* Bold by default */
-  transition: font-weight 0.2s ease;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-header a:hover {
-  font-weight: 800; /* Bolder on hover */
-  text-decoration: underline;
-}
-
-header h1 {
-  margin: 0;
+header a.nav-button:hover {
+  background-color: white;
+  color: #4CAF50;
 }
 
 /* Footer aligned to right 2/3 */
@@ -63,7 +55,7 @@ footer {
   position: fixed;
   bottom: 0;
   height: 7%;
-  width: 66.66%; /* Right 2/3 */
+  width: 66.66%;
   right: 0;
 }
 
@@ -112,14 +104,17 @@ footer {
 /* Question title and text */
 #question-title,
 #question-text {
-  flex: 1 1 100%; /* Full width for title and text */
+  flex: 1 1 100%;
 }
 
 /* Answer options */
 #answer-options {
-  flex: 1 1 50%; /* Take up to half the width, adjust as needed */
+  flex: 1 1 50%;
   max-width: 500px;
-  order: 1; /* Ensure answer-options appears on the left */
+  order: 1;
+  flex-direction: column;
+  width: auto;
+  padding: 10px;
 }
 
 #answer-options button {
@@ -142,27 +137,22 @@ footer {
 
 /* Question image */
 #question-image {
-  flex: 1 1 200px; /* Minimum width to match image width, adjust as needed */
-  order: 2; /* Ensure image appears on the right */
+  flex: 1 1 200px;
+  order: 2;
   text-align: right;
 }
 
 #question-image img {
   max-width: 100%;
   height: auto;
-  max-height: 250px; /* Maintain max height for consistency */
+  max-height: 250px;
   display: block;
   margin: 0;
-}
-#answer-options {
-  flex-direction: column;
-  width: auto;
-  padding: 10px;
 }
 
 /* Navigation & Next buttons */
 #navigation-buttons {
-  flex: 1 1 100%; /* Full width for navigation buttons */
+  flex: 1 1 100%;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -197,6 +187,8 @@ footer {
   cursor: not-allowed;
   color: #666;
 }
+
+/* About page styles */
 #about-content {
   max-width: 800px;
   margin: 40px auto;
@@ -222,58 +214,26 @@ footer {
   margin: 0;
 }
 
-/* Optional: Fix header to match homepage */
-header {
-  position: relative;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-header h1 a {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-header a.nav-button {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 6px 12px;
-  border: 2px solid white;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-header a.nav-button:hover {
-  background-color: white;
-  color: #4CAF50;
-}
-
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   #answer-options,
   #question-image {
-    flex: 1 1 100%; /* Stack vertically on smaller screens */
-    text-align: center; /* Center align for better mobile display */
+    flex: 1 1 100%;
+    text-align: center;
   }
+
   #question-image {
-    order: 1; /* Image on top */
+    order: 1;
   }
+
   #answer-options {
-    order: 2; /* Answers below image */
+    order: 2;
+  }
+
+  header a.nav-button {
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
   }
 }

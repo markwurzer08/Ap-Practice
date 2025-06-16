@@ -299,3 +299,23 @@ body.dark-mode footer {
 }
 
 }
+/* Dark mode toggle button (global, not just mobile) */
+#dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+

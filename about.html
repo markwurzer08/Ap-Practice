@@ -4,6 +4,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.documentElement.classList.add('dark-mode');
+  }
+</script>
   <title>About This Site</title>
   <link rel="stylesheet" href="styles.css">
 </head>

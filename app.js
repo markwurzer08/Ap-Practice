@@ -1,4 +1,4 @@
-//Version 1.08
+//Version 1.09
 const problems = {
   physics: [
     {
@@ -247,7 +247,20 @@ const problems = {
       question:"An empty container with volume 0.02 m³ is placed on a scale, which then reads 10 N. An unknown liquid is then poured into the container until the container is completely full. The new reading on the scale in 170 N. Which of the following is most nearly the density ρ of the unknown liquid?",
       options:["A. ρ = 800 kg/m³","B. ρ = 850 kg/m³","C. ρ = 8000 kg/m³","D. ρ = 8500 kg/m³"],
       answer:"A. ρ = 800 kg/m³"
+    },
+    {
+      question:"A child kicks a ball with an initial velocity of 8.5 m/s at an angle of 35° with the horizontal, as shown. The ball has an initial vertical velocity of 4.9 m/s. The horizontal component of the ball's initial velocity is",
+      image:"https://i.imgur.com/L1etTSM.png",
+      options:["A. 3.6 m/s","B. 4.9 m/s","C. 7.0 m/s","D. 13 m/s"],
+      answer:"C. 7.0 m/s"
+    },
+    {
+      question:"A motorboat, which has a speed of 5.0 m/s in still water, is headed east as it crosses a river flowing south at 3.3 m/s. What is the magnitude of the boat's resultant velocity with respect to the starting point?",
+      image:"https://i.imgur.com/idOD7po.png",
+      options:["A. 3.3 m/s","B. 5.0 m/s","C. 6.0 m/s","D. 8.3 m/s"],
+      answer:"C. 6.0 m/s"
     }
+  
     
   ],
   precalc: [

@@ -41,19 +41,19 @@
   <script>
   const toggleButton = document.getElementById('dark-mode-toggle');
 
-  // Load saved preference
-    
-  if (localStorage.getItem('darkMode') === 'enabled') {
-    document.body.classList.add('dark-mode');
-    toggleButton.textContent = '☀️ Light Mode';
-  }
+    function updateToggleButton() {
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    }
 
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-  });
+    // Initialize button state
+    updateToggleButton();
+
+    toggleButton.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+      updateToggleButton();
+    });
 </script>
 
 </body>

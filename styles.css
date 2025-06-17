@@ -1,4 +1,4 @@
-/* Version 1.10*/
+/* Version 1.11*/
 /* General styles */
 body {
   font-family: Arial, sans-serif;
@@ -15,6 +15,7 @@ header {
   color: white;
   padding: 10px 20px;
   text-align: center;
+  margin-bottom: 0; /* Added */
 }
 
 header h1 {
@@ -62,6 +63,10 @@ footer {
 /* Subject buttons */
 #choose-subject {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -256,45 +261,45 @@ footer {
 }
 
   /* DARK MODE */
-body.dark-mode {
+html.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
 }
 
-body.dark-mode header {
+html.dark-mode header {
   background-color: #222;
   color: #f0f0f0;
 }
 
-body.dark-mode header a.nav-button {
+html.dark-mode header a.nav-button {
   border-color: #f0f0f0;
   color: #f0f0f0;
    background-color:#222
 }
 
-body.dark-mode header a.nav-button:hover {
+html.dark-mode header a.nav-button:hover {
   background-color: #f0f0f0;
   color: #222;
 }
 
-body.dark-mode #question-container,
-body.dark-mode #about-content {
+html.dark-mode #question-container,
+html.dark-mode #about-content {
   background-color: #1e1e1e;
   color: #f0f0f0;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
 }
 
-body.dark-mode #answer-options button {
+html.dark-mode #answer-options button {
   background-color: #333;
   color: #f0f0f0;
   border-color: #555;
 }
 
-body.dark-mode #answer-options button:hover {
+html.dark-mode #answer-options button:hover {
   background-color: #444;
 }
 
-body.dark-mode footer {
+html.dark-mode footer {
   background-color: #222;
   color: #ccc;
 }
@@ -320,65 +325,66 @@ body.dark-mode footer {
 }
 
   /* DARK MODE */
-body.dark-mode {
+html.dark-mode body {
   background-color: #121212;
   color: #f0f0f0;
 }
 
-body.dark-mode header {
+html.dark-mode header {
   background-color: #222;
   color: #f0f0f0;
 }
 
-body.dark-mode header a.nav-button {
+html.dark-mode header a.nav-button {
   border-color: #f0f0f0;
   color: #f0f0f0;
 }
 
-body.dark-mode header a.nav-button:hover {
+html.dark-mode header a.nav-button:hover {
   background-color: #f0f0f0;
   color: #222;
 }
 
-body.dark-mode #question-container,
-body.dark-mode #about-content {
+html.dark-mode #question-container,
+html.dark-mode #about-content {
   background-color: #1e1e1e;
   color: #f0f0f0;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
 }
 
-body.dark-mode #answer-options button {
+html.dark-mode #answer-options button {
   background-color: #333;
   color: #f0f0f0;
   border-color: #555;
 }
 
-body.dark-mode #answer-options button:hover {
+html.dark-mode #answer-options button:hover {
   background-color: #444;
 }
 
-body.dark-mode footer {
+html.dark-mode footer {
   background-color: #222;
   color: #ccc;
 }
-body.dark-mode #choose-subject nav a {
+html.dark-mode #choose-subject nav a {
   color: white;
   border-color: white;
 }
 
-body.dark-mode #choose-subject nav a:hover {
+html.dark-mode #choose-subject nav a:hover {
   background-color: white;
   color: #121212;
 }
-body.dark-mode header a.nav-button {
+html.dark-mode header a.nav-button {
   border-color: #f0f0f0;
   color: #f0f0f0;
    background-color:#222
 }
 
-body.dark-mode header a.nav-button:hover {
+html.dark-mode header a.nav-button:hover {
   background-color: #f0f0f0;
   color: #222;
 }
+
 
 

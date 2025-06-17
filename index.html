@@ -1,40 +1,42 @@
-<!--Version 1.09-->
+<!-- Version 1.10 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AP Practice</title>
+
   <script>
-  // Read preference early and set class on <html> immediately
-  if (localStorage.getItem('darkMode') === 'enabled') {
-    document.documentElement.classList.add('dark-mode');
-  } else {
-    // Make sure to clear or set explicitly if you want
-    localStorage.setItem('darkMode', 'disabled');
-  }
-</script>
+    // Run early before CSS loads
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    } else if (darkMode !== 'disabled') {
+      // Default to disabled if nothing set
+      localStorage.setItem('darkMode', 'disabled');
+    }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RTVVTD0T1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-3RTVVTD0T1');
-  </script> 
+  </script>
 </head>
 <body>
- <header>
-  <button id="dark-mode-toggle">🌙 Dark Mode</button>
-  <h1><a href="index.html">AP Practice</a></h1>
-  <a class="nav-button" href="about.html">About</a>
-</header>
-
+  <header>
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    <h1><a href="index.html">AP Practice</a></h1>
+    <a class="nav-button" href="about.html">About</a>
+  </header>
 
   <div id="choose-subject">
     <p>Choose a subject to start practicing:</p>
@@ -58,35 +60,27 @@
   </div>
 
   <footer>
-       <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
   </footer>
 
   <script src="app.js"></script>
   <script>
-  const darkModeSetting = localStorage.getItem('darkMode');
+    const toggleButton = document.getElementById('dark-mode-toggle');
 
-  // If no preference or explicitly disabled, make sure localStorage is set to 'disabled'
-  if (darkModeSetting !== 'enabled') {
-    localStorage.setItem('darkMode', 'disabled');
-  }
+    function updateToggleButton() {
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    }
 
-  // Now apply dark mode if enabled
-  const toggleButton = document.getElementById('dark-mode-toggle');
+    // Initialize button text on page load
+    updateToggleButton();
 
-  if (localStorage.getItem('darkMode') === 'enabled') {
-    document.body.classList.add('dark-mode');
-    toggleButton.textContent = '☀️ Light Mode';
-  } else {
-    toggleButton.textContent = '🌙 Dark Mode';
-  }
-
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-  });
-</script>
-
+    toggleButton.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark-mode');
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+      updateToggleButton();
+    });
+  </script>
 </body>
 </html>

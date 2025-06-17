@@ -9,6 +9,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AP Practice</title>
+  <script>
+  // Read preference early and set class on <html> immediately
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.documentElement.classList.add('dark-mode');
+  } else {
+    // Make sure to clear or set explicitly if you want
+    localStorage.setItem('darkMode', 'disabled');
+  }
+</script>
   <link rel="stylesheet" href="styles.css" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RTVVTD0T1"></script>

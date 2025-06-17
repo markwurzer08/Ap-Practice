@@ -1,4 +1,4 @@
-/* Version 1.09 */
+/* Version 1.10 */
 /* General styles */
 body {
   font-family: Arial, sans-serif;
@@ -369,5 +369,15 @@ body.dark-mode #choose-subject nav a {
 body.dark-mode #choose-subject nav a:hover {
   background-color: white;
   color: #121212;
+}
+body.dark-mode header a.nav-button {
+  border-color: #f0f0f0;
+  color: #f0f0f0;
+   background-color:#222
+}
+
+body.dark-mode header a.nav-button:hover {
+  background-color: #f0f0f0;
+  color: #222;
 }
 

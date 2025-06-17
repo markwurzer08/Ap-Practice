@@ -1,4 +1,4 @@
-<!--Version 1.07-->
+<!--Version 1.08-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,13 +59,21 @@
 
   <script src="app.js"></script>
   <script>
- const toggleButton = document.getElementById('dark-mode-toggle');
+  const toggleButton = document.getElementById('dark-mode-toggle');
 
-toggleButton.addEventListener('click', () => {
-  console.log('Toggle button clicked!');
-  document.body.classList.toggle('dark-mode');
-});
+  // Load dark mode preference on page load
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    toggleButton.textContent = '☀️ Light Mode';
+  }
 
+  // Toggle dark mode on button click
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+  });
 </script>
 
 </body>

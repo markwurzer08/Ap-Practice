@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kinematics – AP Physics 1</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+  </div>
+  <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+  <div class="header-right">
+    <a class="nav-button" href="about.html">About</a>
+    <a class="nav-button" href="subject-info.html">Subjects</a>
+  </div>
+</header>
+
+<main id="topic-page">
+  <h2>Kinematics</h2>
+  <section>
+    <p><strong>Kinematics</strong> is the branch of physics that deals with the description of motion without considering its causes. Key concepts include:</p>
+    <ul>
+      <li>Displacement, velocity, and acceleration</li>
+      <li>Motion graphs</li>
+      <li>Equations of motion under constant acceleration</li>
+      <li>Free-fall and projectile motion</li>
+    </ul>
+  </section>
+
+  <!-- You can add practice questions, diagrams, or examples below -->
+</main>
+
+<footer>
+  <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+  const toggleButton = document.getElementById('dark-mode-toggle');
+
+  function updateToggleButton() {
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+
+  updateToggleButton();
+
+  toggleButton.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    updateToggleButton();
+  });
+</script>
+
+</body>
+</html>

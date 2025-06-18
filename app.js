@@ -1,4 +1,4 @@
-//Version 1.09
+//Version 1.10
 const problems = {
   physics: [
     {
@@ -259,7 +259,20 @@ const problems = {
       image:"https://i.imgur.com/idOD7po.png",
       options:["A. 3.3 m/s","B. 5.0 m/s","C. 6.0 m/s","D. 8.3 m/s"],
       answer:"C. 6.0 m/s"
+    },
+    {
+      question:"Mark holds a 5 kg mirror against the wall 1.5 meters above the ground for 20 seconds while Bob nails it in place. what is Mark's power output during that time period?",
+      options:["A. 2.45 Watts","B. 3.68 Watts","C. 66.7 Watts","D. None of the above"],
+      answer:"D. None of the above"
+    },
+    {
+      question:"If the block below is in equilibrium, what is the magnitude of the unknown force?",
+      image:"https://i.imgur.com/pEE2qYL.png",
+      options:["A. 7 N","B. 8 N","C. 9 N","D. 10 N"],
+      answer:"B. 8 N"
     }
+        
+
   
     
   ],

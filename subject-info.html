@@ -3,6 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script>
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.documentElement.classList.add('dark-mode');
+  }
+</script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Subject Information</title>
   <link rel="stylesheet" href="styles.css" />
@@ -57,5 +63,22 @@
   </footer>
 
   <script src="app.js"></script>
+  <script>
+  const toggleButton = document.getElementById('dark-mode-toggle');
+
+  function updateToggleButton() {
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+
+  updateToggleButton();
+
+  toggleButton.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    updateToggleButton();
+  });
+</script>
+
 </body>
 </html>

@@ -47,6 +47,11 @@ header a.nav-button:hover {
   background-color: white;
   color: #4CAF50;
 }
+header nav {
+  display: flex;
+  gap: 10px;
+}
+
 
 /* Footer aligned to right 2/3 */
 footer {

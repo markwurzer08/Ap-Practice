@@ -56,7 +56,6 @@ header {
   margin: 0;
   font-size: 1.8rem;
   white-space: nowrap;
-  pointer-events: none; /* so clicks pass through if needed */
 }
 
 .site-title a {

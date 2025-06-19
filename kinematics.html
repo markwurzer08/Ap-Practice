@@ -1,57 +1,40 @@
+<!-- kinematics.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kinematics – AP Physics 1</title>
-  <link rel="stylesheet" href="styles.css" />
   <script>
     if (localStorage.getItem('darkMode') === 'enabled') {
       document.documentElement.classList.add('dark-mode');
     }
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinematics</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <div class="header-left">
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+    <div class="header-right">
+      <a class="nav-button" href="about.html">About</a>
+      <a class="nav-button" href="subject-info.html">Subjects</a>
+    </div>
+  </header>
 
-<header>
-  <div class="header-left">
-    <button id="dark-mode-toggle">🌙 Dark Mode</button>
-  </div>
-  <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
-  <div class="header-right">
-    <a class="nav-button" href="about.html">About</a>
-    <a class="nav-button" href="subject-info.html">Subjects</a>
-  </div>
-</header>
+  <main id="topic-content">
+    <div class="topic-container">
+      <h2>Kinematics</h2>
+      <p>Kinematics is the study of motion without considering its causes. It includes concepts like displacement, velocity, acceleration, and time. You’ll use equations to describe how objects move under constant acceleration.</p>
+    </div>
+  </main>
 
-<main id="topic-page">
-  <h2>Kinematics</h2>
-  <p>
-    Kinematics is the study of motion without considering the forces that cause it. It includes analyzing displacement, velocity, acceleration, and time to describe the motion of objects. It lays the foundation for solving problems involving free fall and projectile motion.
-  </p>
-</main>
+  <footer>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+  </footer>
 
-<footer>
-  <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
-</footer>
-
-<script src="app.js"></script>
-<script>
-  const toggleButton = document.getElementById('dark-mode-toggle');
-
-  function updateToggleButton() {
-    const isDark = document.documentElement.classList.contains('dark-mode');
-    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-  }
-
-  updateToggleButton();
-
-  toggleButton.addEventListener('click', () => {
-    const isDark = document.documentElement.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-    updateToggleButton();
-  });
-</script>
-
+  <script src="app.js"></script>
 </body>
 </html>

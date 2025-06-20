@@ -1,0 +1,57 @@
+<!-- oscillations.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oscillations</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+    <div class="header-right">
+      <a class="nav-button" href="about.html">About</a>
+      <a class="nav-button" href="subject-info.html">Subjects</a>
+    </div>
+  </header>
+
+  <main id="topic-content">
+    <div class="topic-container">
+      <h2>Oscillations</h2>
+      <p>Oscillations are a type of repetitive back-and-forth motion that occur in many natural and mechanical systems. From the swinging of a pendulum to the vibrations of a guitar string, oscillatory motion is all around us. In physics, understanding oscillations helps us describe systems that move in cycles, and it lays the foundation for topics such as waves, sound, and even electricity.
+
+At its core, an oscillation is a periodic motion—meaning it repeats at regular time intervals. A common example is simple harmonic motion (SHM), which describes ideal oscillations where the restoring force acting on an object is directly proportional to its displacement from equilibrium and acts in the opposite direction. This relationship is described by Hooke’s Law:
+F = -kx,
+where F is the restoring force, k is the spring constant, and x is the displacement from equilibrium.
+
+In systems like a mass on a spring or a swinging pendulum (under certain conditions), the motion can be modeled mathematically using sine or cosine functions. These types of motion are smooth, predictable, and symmetrical. Several key terms help describe oscillatory motion:
+
+Amplitude is the maximum displacement from the equilibrium position.
+
+Period (T) is the time it takes to complete one full cycle.
+
+Frequency (f) is the number of cycles per second and is the inverse of the period.
+
+Angular frequency (ω) is related to how quickly the system moves through its cycle and is given by ω = 2πf.
+
+Oscillations also involve the transformation of energy between two forms: kinetic energy and potential energy. In a spring-mass system, for example, when the mass is at its maximum displacement, all the energy is stored as potential energy. As it passes through equilibrium, that energy is converted to kinetic energy. In an ideal system with no friction or air resistance, the total mechanical energy remains constant, and the oscillation continues indefinitely.
+
+However, in real-world systems, oscillations typically experience damping—a gradual loss of energy due to friction, air resistance, or other forces. Damped oscillations decrease in amplitude over time and eventually stop. In some cases, systems can be driven by an external force, leading to forced oscillations. If the driving frequency matches the system’s natural frequency, resonance occurs, resulting in a large increase in amplitude. Resonance can be useful, like in musical instruments, or dangerous, as seen in the collapse of bridges due to wind-induced vibrations.
+
+In summary, oscillations are an essential concept in physics that help explain a wide variety of physical phenomena. By analyzing the patterns of oscillatory motion, we gain a deeper understanding of how systems behave over time, how energy moves through them, and how external forces can influence their motion. Whether in engineering, music, or nature, the study of oscillations is a powerful tool for making sense of the physical world.</p>
+  <footer>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

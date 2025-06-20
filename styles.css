@@ -532,7 +532,7 @@ html.dark-mode #subject-info a {
 }
 
 html.dark-mode #subject-info a:hover {
-  font-weight: bold;
+  font-weight: 900;
   text-decoration: underline;
   color: white; /* brighter on hover */
 }

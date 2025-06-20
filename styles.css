@@ -512,6 +512,19 @@ html.dark-mode .topic-container {
 html.dark-mode .topic-container h2 {
   color: #f0f0f0;
 }
+#subject-info a {
+  color: black;  /* Default link color */
+  text-decoration:none;
+  font-weight: 900;    /* Normal weight by default */
+  transition: font-weight 0.2s ease; /* Smooth transition for bold */
+  
+}
+
+#subject-info a:hover {
+  font-weight: 900;  /* Bold on hover */
+  cursor: pointer;  /* Change cursor to pointer */
+  text-decoration:underline;
+}
 
 
 

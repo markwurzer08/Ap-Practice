@@ -61,5 +61,21 @@ In summary, trigonometric and polar functions provide powerful methods for under
   </footer>
 
   <script src="app.js"></script>
+    <script>
+  const toggleButton = document.getElementById('dark-mode-toggle');
+
+  function updateToggleButton() {
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+
+  updateToggleButton();
+
+  toggleButton.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    updateToggleButton();
+  });
+</script>
 </body>
 </html>

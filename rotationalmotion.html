@@ -1,0 +1,50 @@
+<!-- rotationalmotion.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rotational Motion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+    <div class="header-right">
+      <a class="nav-button" href="about.html">About</a>
+      <a class="nav-button" href="subject-info.html">Subjects</a>
+    </div>
+  </header>
+
+  <main id="topic-content">
+    <div class="topic-container">
+      <h2>Rotational Motion</h2>
+      <p>Rotational motion is a major concept in physics that describes how objects spin or rotate around a central point or axis. While linear motion deals with objects moving in a straight line, rotational motion focuses on circular or angular movement. Even though the two types of motion are different, many of the principles we learn in linear motion carry over to rotational systems in similar—but slightly more complex—ways.
+
+In rotational motion, instead of using velocity and acceleration, we use angular quantities. Angular displacement tells us how far an object has rotated, measured in radians. Angular velocity describes how fast the object is rotating, and angular acceleration measures how quickly that rotation is speeding up or slowing down. These concepts are directly related to their linear counterparts, but they apply to motion around a circular path.
+
+One of the most important ideas in rotational motion is torque, which is the rotational equivalent of force. Torque depends on how much force is applied, where it is applied, and the angle at which it’s applied. The farther from the axis of rotation the force is applied, the more torque it produces. This is why it’s easier to open a door by pushing near the handle than near the hinges.
+
+Another key concept is moment of inertia, which is like mass for rotational motion. It measures how difficult it is to change an object’s rotational motion. The more mass an object has, and the farther that mass is from the axis of rotation, the greater its moment of inertia. Just like in linear motion, Newton’s Second Law has a rotational version: τ = Iα, where τ is torque, I is the moment of inertia, and α is angular acceleration.
+
+Rotational motion also has its own version of momentum, called angular momentum, and just like linear momentum, it is conserved in a closed system. This means that if no external torque is acting on a system, the total angular momentum remains constant. This explains phenomena like figure skaters spinning faster when they pull their arms in—by decreasing their moment of inertia, they increase their angular velocity to keep angular momentum conserved.
+
+Overall, understanding rotational motion adds a whole new layer to how we see movement in the world. From spinning wheels and rotating planets to amusement park rides and sports, rotational motion is everywhere. Learning how it works not only builds on what we know from linear motion, but also helps us make sense of some of the most dynamic and exciting systems in physics.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

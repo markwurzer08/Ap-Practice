@@ -46,5 +46,21 @@ Overall, understanding rotational motion adds a whole new layer to how we see mo
   </footer>
 
   <script src="app.js"></script>
+    <script>
+  const toggleButton = document.getElementById('dark-mode-toggle');
+
+  function updateToggleButton() {
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+
+  updateToggleButton();
+
+  toggleButton.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    updateToggleButton();
+  });
+</script>
 </body>
 </html>

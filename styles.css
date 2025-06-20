@@ -525,6 +525,18 @@ html.dark-mode .topic-container h2 {
   cursor: pointer;  /* Change cursor to pointer */
   text-decoration:underline;
 }
+/* Dark mode links */
+html.dark-mode #subject-info a {
+  color: #ccc; /* lighter gray for dark background */
+  
+}
+
+html.dark-mode #subject-info a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: white; /* brighter on hover */
+}
+
 
 
 

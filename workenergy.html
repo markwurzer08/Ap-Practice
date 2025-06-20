@@ -1,0 +1,48 @@
+<!-- workenergy.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work & Energy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+    <div class="header-right">
+      <a class="nav-button" href="about.html">About</a>
+      <a class="nav-button" href="subject-info.html">Subjects</a>
+    </div>
+  </header>
+
+  <main id="topic-content">
+    <div class="topic-container">
+      <h2>Dynamics</h2>
+      <p>In AP Physics 1, work and energy are important concepts that help explain how and why objects move. They’re connected to forces, motion, and how energy is transferred or changed from one form to another.
+
+Work happens when a force moves an object in the direction of the force. If you push something and it moves, you’ve done work. The formula for work is W = Fdcos(θ), which means work equals force times distance times the cosine of the angle between them. If the object doesn’t move, or moves in a different direction, no work is done.
+
+Energy is the ability to do work. There are different types, like kinetic energy (energy of motion) and potential energy (stored energy due to position). Kinetic energy is given by the formula KE = ½mv², and gravitational potential energy is PE = mgh, where m is mass, g is gravity, and h is height.
+
+One of the biggest ideas in this unit is the Work-Energy Theorem, which says that the net work done on an object equals its change in kinetic energy. There’s also the conservation of energy rule — energy can’t be created or destroyed, only transferred or transformed. That means the total energy stays the same, even if it changes from potential to kinetic or vice versa.
+
+Overall, work and energy help us understand how forces affect motion and how energy is used or stored in physical systems. It’s a super useful topic for solving problems in both physics and real life.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

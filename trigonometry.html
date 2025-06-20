@@ -1,0 +1,65 @@
+<!-- trigonometry.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trigonometric and Polar Functions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+    <div class="header-right">
+      <a class="nav-button" href="about.html">About</a>
+      <a class="nav-button" href="subject-info.html">Subjects</a>
+    </div>
+  </header>
+
+  <main id="topic-content">
+    <div class="topic-container">
+      <h2>Trigonometric and Polar Functions</h2>
+      <p>Trigonometric and polar functions are fundamental topics in AP Precalculus that expand our understanding of how to describe and analyze curves, angles, and periodic phenomena. These functions are essential in fields such as physics, engineering, and navigation, and they provide powerful tools for working with circular and oscillatory motion.
+
+Trigonometric functions—such as sine, cosine, and tangent—are based on the relationships between the angles and sides of right triangles. These functions are periodic, meaning they repeat their values in regular intervals, which makes them ideal for modeling waves, sound, light, and other cyclical patterns.
+
+The basic trigonometric functions can be defined using the unit circle, a circle of radius one centered at the origin of a coordinate plane. On this circle, an angle θ (measured in degrees or radians) corresponds to a point with coordinates (cos θ, sin θ). Here, the cosine function gives the horizontal coordinate, and the sine function gives the vertical coordinate. The tangent function is the ratio of sine to cosine, or sin θ divided by cos θ.
+
+Trigonometric functions have important properties like amplitude, period, and phase shift that describe their shape and position on a graph. The amplitude is the height from the center line to the peak of the wave, the period is the length of one complete cycle, and the phase shift is a horizontal shift that moves the graph left or right. These properties are crucial when using trigonometric functions to model real-world phenomena, such as sound waves, tides, or seasonal changes.
+
+In addition to sine, cosine, and tangent, there are reciprocal functions—cosecant, secant, and cotangent—that also play important roles, especially when working with complex equations or integrals in calculus.
+
+Polar functions offer an alternative way to represent curves and points using a radius and angle rather than x and y coordinates. Instead of describing a point by how far it is from the horizontal and vertical axes, polar coordinates use the distance from the origin (called the radius, r) and the angle θ from the positive x-axis.
+
+A polar function expresses r as a function of θ, written as r = f(θ). This form is especially useful for describing curves that are circular, spiral, or have symmetry around a point. Examples of polar graphs include circles, rose curves, limaçons, and spirals.
+
+One of the key advantages of polar functions is their ability to represent curves that would be difficult or impossible to express with traditional rectangular (Cartesian) equations. They also connect closely with trigonometric functions, since the radius often involves sine or cosine of θ.
+
+Converting between rectangular coordinates (x, y) and polar coordinates (r, θ) uses the formulas:
+x = r times cos θ
+y = r times sin θ
+and
+r = square root of (x squared plus y squared)
+θ = arctangent of (y divided by x), keeping in mind the correct quadrant.
+
+In summary, trigonometric and polar functions provide powerful methods for understanding and describing patterns that involve angles, rotations, and periodic behavior. Whether modeling waves, plotting complex curves, or solving problems involving circular motion, these functions expand the mathematical toolkit available to students and professionals alike.
+
+</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

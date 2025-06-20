@@ -48,5 +48,21 @@ Overall, kinematics is super important in physics because it helps us understand
   </footer>
 
   <script src="app.js"></script>
+    <script>
+  const toggleButton = document.getElementById('dark-mode-toggle');
+
+  function updateToggleButton() {
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+
+  updateToggleButton();
+
+  toggleButton.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    updateToggleButton();
+  });
+</script>
 </body>
 </html>

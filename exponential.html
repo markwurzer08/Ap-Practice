@@ -1,0 +1,77 @@
+<!-- exponential.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exponential and Logarithmic Functions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+    <div class="header-right">
+      <a class="nav-button" href="about.html">About</a>
+      <a class="nav-button" href="subject-info.html">Subjects</a>
+    </div>
+  </header>
+
+  <main id="topic-content">
+    <div class="topic-container">
+      <h2>Exponential and Logarithmic Functions</h2>
+      <p>Exponential and logarithmic functions are essential tools in mathematics, especially in modeling situations involving growth, decay, and repeated change. In AP Precalculus, understanding how these functions behave and relate to each other helps students interpret real-world phenomena and prepares them for topics in calculus, science, and finance.
+
+An exponential function is a function in which a constant base is raised to a variable exponent. The general form is
+f(x) = a times b raised to the x,
+where a is a constant, b is the base (a positive real number not equal to one), and x is the exponent. When b is greater than one, the function represents exponential growth, and when b is between zero and one, it represents exponential decay.
+
+Exponential functions are unique because their rate of change increases or decreases multiplicatively. For example, in population growth or radioactive decay, the amount changes by a fixed percentage rather than a fixed amount. These functions have a horizontal asymptote, usually the x-axis (y equals zero), and they pass through the point where x equals zero and y equals a.
+
+The inverse of an exponential function is a logarithmic function. A logarithm answers the question: “To what exponent must the base be raised to produce a given number?” The general form is
+f(x) = log base b of x,
+which means that b raised to the power y equals x. Logarithmic functions are only defined for positive inputs, and they have a vertical asymptote at x equals zero. Like exponential functions, their graphs increase or decrease, but they do so more slowly. They pass through the point where x equals one and y equals zero because log base b of one equals zero for any base b.
+
+A special base often used in both exponential and logarithmic functions is e, Euler’s number, approximately 2.718. The natural exponential function is written as e raised to the x, and its inverse is the natural logarithm, written as ln of x. These are especially important in calculus and natural sciences because of their unique properties related to rates of change and continuous growth.
+
+Exponential and logarithmic functions follow several key properties and rules that allow us to solve equations and simplify expressions. For example:
+
+Exponential rules:
+
+b to the x times b to the y equals b to the power of x plus y
+
+(b to the x) to the y equals b to the power of x times y
+
+Logarithmic rules:
+
+log base b of (x times y) equals log base b of x plus log base b of y
+
+log base b of (x divided by y) equals log base b of x minus log base b of y
+
+log base b of x to the r equals r times log base b of x
+
+Solving exponential and logarithmic equations often involves rewriting one form into the other or using logarithms to bring down exponents. For example, to solve two raised to the x equals ten, we can take the logarithm of both sides:
+x equals log base two of ten,
+or using the change-of-base formula:
+x equals log of ten divided by log of two.
+
+In real-world applications, exponential and logarithmic functions model a wide range of scenarios: population growth, radioactive decay, interest compounded continuously, sound intensity, pH in chemistry, and earthquake magnitude. Their ability to handle large-scale changes makes them vital in science, economics, engineering, and beyond.
+
+In summary, exponential and logarithmic functions are not only mathematically powerful but also incredibly useful in modeling the world around us. Understanding their properties and relationships deepens students’ mathematical thinking and provides a solid foundation for more advanced topics in calculus and applied mathematics.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

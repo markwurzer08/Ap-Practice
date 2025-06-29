@@ -380,7 +380,7 @@ const problems = {
     },
     {
      question:"The function f(x) = 2sin(π/3x-π/2)+1 models the height (in meters) of a point on a Ferris wheel over time x (in seconds). What are the amplitude, period, phaseshift, and vertical shift of the function?",
-     image:"https://i.imgur.com/FkJ6vBj.png".
+     image:"https://i.imgur.com/FkJ6vBj.png",
      options:["A. Amplitude- 2, Period- 3, Phase Shift- 1/3, Vertical Shift- +1","B. Amplitude- 1, Period- 6, Phase Shift- π/3, Vertical Shift- +2","C. Amplitude- 2, Period- 6, Phase Shift- 1, Vertical Shift- +1","D. Amplitude- 2, Period- 3, Phase Shift- 1, Vertical Shift- +1"],
      answer:"D. Amplitude- 2, Period- 3, Phase Shift- 1, Vertical Shift- +1"
     },

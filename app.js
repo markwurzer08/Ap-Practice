@@ -377,7 +377,34 @@ const problems = {
       question:"The function k is given by k(θ) = 2sin(θ). What are all values of θ, for 0 ≤ θ < 2π, where k(θ) = -1?",
       options:["A. θ = π/6 and θ = 5π/6","B. θ = π/3 and θ = 5π/3","C. θ = 2π/3 and θ = 4π/3","D. θ = 7π/6 and θ = 11π/6"],
       answer:"D. θ = 7π/6 and θ = 11π/6"
+    },
+    {
+     question:"The function f(x) = 2sin(π/3x-π/2)+1 models the height (in meters) of a point on a Ferris wheel over time x (in seconds). What are the amplitude, period, phaseshift, and vertical shift of the function?",
+     image:"https://i.imgur.com/FkJ6vBj.png".
+     options:["A. Amplitude: 2, Period: 3, Phase Shift: 1/3, Vertical Shift: +1","B. Amplitude: 1, Period: 6, Phase Shift: π/3, Vertical Shift: +2","C. Amplitude: 2, Period: 6, Phase Shift: 1, Vertical Shift: +1","D. Amplitude: 2, Period: 3, Phase Shift: 1, Vertical Shift: +1"],
+     answer:"D. Amplitude: 2, Period: 3, Phase Shift: 1, Vertical Shift: +1"
+    },
+    {
+      question:"What is the domain of the function f(g(x))?",
+      image:"https://i.imgur.com/jzI5KUt.png",
+      options:["A. (-∞,1) ∪ (1,1/2]","B. (-∞,1) ∪ (1,3]","C. (-∞,1) ∪ (1,∞]","D. (-∞,1/2]"],
+      answer:"A. (-∞,1) ∪ (1,1/2]",
+    },
+    {
+      question:"What is the inverse of the function below?",
+      image:"https://i.imgur.com/ZmkQJ8J.png",
+      options:["A. g⁻¹(x) = ˣ⁻¹⁄₂ₓ₋₁","B. g⁻¹(x) = ˣ⁺¹⁄ₓ₋₂","C. g⁻¹(x) = ˣ⁺¹⁄₂₋ₓ","D. g⁻¹(x) = ˣ⁻¹⁄ₓ₊₂"],
+      answer:"C. g⁻¹(x) = ˣ⁺¹⁄₂₋ₓ"
+    },
+    {
+      question:"Which of the following equations best represents the function f(x)?",
+      image:"https://i.imgur.com/4GIU99D.png",
+      options:["A. f(x) = 3cos(π/3x)+2","B. f(x) = 3sin(π/3x)+2","C. f(x) = 3sin(π/6x)+2","D. f(x) = 3cos(π/6x)+2"],
+      answer:"B. f(x) = 3sin(π/3x)+2"
     }
+               
+    
+        
         
   ]
 };

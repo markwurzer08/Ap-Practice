@@ -456,7 +456,21 @@ const problems = {
       image:"https://i.imgur.com/4GIU99D.png",
       options:["A. f(x) = 3cos(π/3x)+2","B. f(x) = 3sin(π/3x)+2","C. f(x) = 3sin(π/6x)+2","D. f(x) = 3cos(π/6x)+2"],
       answer:"B. f(x) = 3sin(π/3x)+2"
+    },
+    //24
+    {
+      question:"Which of the following is equivalent to the expression 2sin(π/14)cos(π/14)?",
+      options:["A. sin(π/28)","B. sin(π/7)cos(π/7)","C. sin(π/7)","D. cos(π/7)"],
+      answer:"C. sin(π/7)"
+    },
+    //25
+    {
+      question:"What is the equation for the graph below?",
+      image:"https://i.imgur.com/XBpoc3p.png",
+      options:["A. r = cos(2θ)","B. r = sin(4θ)","C. r = cos(4θ)","D. r = sin(2θ)"],
+      answer:"D. r = sin(2θ)"
     }
+      
                
     
         

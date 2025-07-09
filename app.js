@@ -469,12 +469,53 @@ const problems = {
       image:"https://i.imgur.com/XBpoc3p.png",
       options:["A. r = cos(2θ)","B. r = sin(4θ)","C. r = cos(4θ)","D. r = sin(2θ)"],
       answer:"D. r = sin(2θ)"
-    }
-      
-               
-    
-        
-        
+    },
+    //26
+    {
+      question:"What is the horizontal asymptote of the function below?",
+      image:"https://i.imgur.com/HHl87Qd.png",
+      options:["A. y = -1","B. y = -3","C. y = 0","D. x = -3"],
+      answer:"B. y = -3"
+    },
+    //27
+    {
+      question:"Solve: tan(x) = √3 for 0 ≤ x < 2π",
+      options:["A. π/6, 5π/6","D. 2π/3, 5π/3","C. π/3, 2π/3","D. π/3, 4π/3"],
+      answer:"D. π/3, 4π/3"
+    },
+    //28
+    {
+      question:"Which function has an inverse that is also a function",
+      options:["A. f(x) = x²","B. f(x) = |x|","C. f(x) = x³","D. f(x) = sin(x) -π ≤ x ≤ π"],
+      answer:"C. f(x) = x³"
+    },
+    //29
+    {
+      question:"What is the domain of the function below?",
+      image:"https://i.imgur.com/623o5fc.png",
+      options:["A. (-2,2)","B. (-∞,-2) ∪ (2, ∞)","C. (-2,2)","D. (0,∞)"],
+      answer:"B. (-∞, -2) ∪ (2, ∞)"
+    },
+    //30
+    {
+      question:"The function f(x) = asin(bx + c) + d has a period of 3π/2. What is the value of b?",
+      options:["A. 4/3","B. 4π/3","C. 2/3","D. 2π/3"],
+      answer:"A. 4/3"
+    },
+    //31
+    {
+      question:"Which of the following describes the graph of the function below?",
+      image:"https://i.imgur.com/k6MIUha.png",
+      options:["A. A liner function with a hole at x = -1","B. A rational function with a vertical asymptote at x = -1","C. A quadratic with no asymptotes","D. An exponetial curve with a hole at x = -1"],
+      answer:"A. A liner function with a hole at x = -1"
+    },
+    //32
+    {
+      question:"The graph of a function f(x) is shown below. It is defined on the interval [-4,4]. Which of the following best describes the range of the function f(x)?",
+      image:"https://i.imgur.com/RTbOzmT.png",
+      options:["A. (-2,2]","B. (-4,2]","C. [-4,4]","D. [-2,2]"],
+      answer:"D. [-2,2]"
+    }     
   ]
 };
 

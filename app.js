@@ -302,11 +302,34 @@ const problems = {
       image:"https://i.imgur.com/pEE2qYL.png",
       options:["A. 7 N","B. 8 N","C. 9 N","D. 10 N"],
       answer:"B. 8 N"
-    }
-        
-
-  
-    
+    },
+    //33
+    {
+      question:"A 1kg box accelerates from rest in a straight line across a frictionless surface for 20 seconds as depicted in the force vs time graph below. What is the time it takes for the object to reach 5 m/s?",
+      image:"https://i.imgur.com/hYIUjuJ.png",
+      options:["A. 5.5s","B. 6s","c. 7s","D. 7.5s"],
+      answer:"D. 7.5s"
+    },
+    //34
+    {
+      question:"The diagram below shows a 1.0 x 10⁵ newton truck at rest on a hill that makes an angle of 8.0° with the horizontal. What is the component of the truck's weight parallel to the hill?",
+      image:"https://i.imgur.com/CcgtgWh.png",
+      options:["A. 1.4 x 10⁴ newtons","B. 1.4 x 10³ newtons","C. 1.0 x 10⁴ newtons","D. 9.9 x 10⁴ newtons"],
+      answer:"A. 1.4 x 10⁴ newtons"
+    },
+      //35
+    {
+      question:"A ball attached to a string is moved at a constant speed in a horizontal circular path. A target is located near the path of the ball as shown in the diagram. At which point along the ball's path should the string be released if the ball is to hit the target?",
+      image:"https://i.imgur.com/a3XK20o.png",
+      options:["A. A","B. B","C. C","D. D"],
+      answer:"B. B"
+    },
+    //36
+    {
+      question:"A ball is dropped from the roof of a tall building and takes 3.1 seconds to hit the ground. How tall is the building? (Neglect Air Resistance)",
+      options:["A. 47 m","B. 94 m","C. 15 m","D. 30 m"],
+      answer:"A. 47 m"
+    } 
   ],
   precalc: [
     //1

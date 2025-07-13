@@ -538,7 +538,35 @@ const problems = {
       image:"https://i.imgur.com/RTbOzmT.png",
       options:["A. (-2,2]","B. (-4,2]","C. [-4,4]","D. [-2,2]"],
       answer:"D. [-2,2]"
-    }     
+    },
+    //33
+    {
+      question:"Solve the inequality below:",
+      image:"https://i.imgur.com/xSlBE6J.png",
+      options:["A. [-8,-4] ∪ [4, ∞)","B. (-∞,-8) ∪ (-4,4)","C. [-8,-4) ∪ [4, ∞)","D. (-∞,-8] ∪ (-4,4]"],
+      answer:"C. [-8,-4) ∪ [4, ∞)"
+    },
+    //34
+    {
+      question:"Simplify the expression below into a single log₇:",
+      image:"https://i.imgur.com/M8p8u9l.png",
+      options:["A. log₇(z⁶√yx)","B. log₇(x⁶/zy⁴)","C. log₇(z⁴x⁴/y²⁴)","D. log₇(yz⁶√x)"],
+      answer:"C. log₇(z⁴x⁴/y²⁴)"
+    },
+    //35
+    {
+      question:"Below is the graph of f(x), an exponential function. Which of the following best represents the graph of f(x)?",
+      image:"https://i.imgur.com/uZ7PUSd.png",
+      options:["A. y = -2(2ˣ⁺²)-1","B. y = -2(2ˣ⁺¹)+1","C. y = -2(2ˣ⁻¹)+1","D. -2(2ˣ⁻²)+1"],
+      answer:"C. y = -2(2ˣ⁻¹)+1"
+    },
+    //36
+    {
+      question:"What is the degree of the function based on the table of values?",
+      image:"https://i.imgur.com/FIoZEH7.png",
+      options:["A. 2","B. 3","C. 4","D. 5"],
+      answer:"B. 3"
+    } 
   ]
 };
 

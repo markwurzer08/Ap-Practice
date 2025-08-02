@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Molecular and Ionic Compound Structure and Properties</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+    <div class="header-right">
+      <a class="nav-button" href="about.html">About</a>
+      <a class="nav-button" href="subject-info.html">Subjects</a>
+    </div>
+  </header>
+
+  <main id="topic-content">
+    <div class="topic-container">
+      <h2>Molecular and Ionic Compound Structure and Properties</h2>
+      <p>This topic focuses on how atoms combine to form molecules and ionic compounds. Molecular compounds share electrons through covalent bonds, while ionic compounds form from the transfer of electrons resulting in charged ions.</p>
+      <p>You will learn about the shapes of molecules, bonding theories like VSEPR, and how these structures influence physical and chemical properties such as melting points, solubility, and conductivity.</p>
+      <p>Understanding these differences helps explain why substances behave the way they do in various conditions.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    function updateToggleButton() {
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    }
+    updateToggleButton();
+    toggleButton.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+      updateToggleButton();
+    });
+  </script>
+</body>
+</html>

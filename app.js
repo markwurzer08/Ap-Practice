@@ -622,7 +622,13 @@ function showQuestion() {
   const subjectProblems = problems[currentSubject];
   if (currentIndex < subjectProblems.length && currentIndex >= 0) {
     currentProblem = subjectProblems[currentIndex];
-    document.getElementById("question-title").textContent = `${currentSubject === 'physics' ? 'AP Physics 1' : 'AP Precalculus'} Practice - Question ${currentIndex + 1}`;
+    let subjectTitle = {
+  physics: "AP Physics 1",
+  precalc: "AP Precalculus",
+  chemistry: "AP Chemistry"
+};
+document.getElementById("question-title").textContent = `${subjectTitle[currentSubject]} Practice - Question ${currentIndex + 1}`;
+
     document.getElementById("question-text").textContent = currentProblem.question;
 
     // Show image if exists

@@ -1,0 +1,58 @@
+<!-- atomic-structure.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atomic Structure and Properties</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <h1 class="site-title"><a href="index.html">AP Practice</a></h1>
+    <div class="header-right">
+      <a class="nav-button" href="about.html">About</a>
+      <a class="nav-button" href="subject-info.html">Subjects</a>
+    </div>
+  </header>
+
+  <main id="topic-content">
+    <div class="topic-container">
+      <h2>Atomic Structure and Properties</h2>
+      <p>Atomic structure explores the basic building blocks of matter—atoms. It covers subatomic particles like protons, neutrons, and electrons, and how they arrange in the nucleus and electron cloud.</p>
+      <p>Understanding atomic properties includes learning about atomic number, mass number, isotopes, and electron configurations. These properties help explain how atoms interact and form bonds with other atoms.</p>
+      <p>This topic lays the foundation for chemistry because everything else builds on the behavior of atoms and their structure.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 AP Practice Problems. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+
+    function updateToggleButton() {
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    }
+
+    updateToggleButton();
+
+    toggleButton.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+      updateToggleButton();
+    });
+  </script>
+</body>
+</html>

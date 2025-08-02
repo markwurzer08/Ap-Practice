@@ -567,7 +567,39 @@ const problems = {
       options:["A. 2","B. 3","C. 4","D. 5"],
       answer:"B. 3"
     } 
-  ]
+  ],
+  chemistry: [
+  {
+    question: "Which of the following best explains why water has a higher boiling point than hydrogen sulfide (H₂S)?",
+    options: [
+      "A. Water has a lower molecular mass than H₂S",
+      "B. Water has stronger hydrogen bonding than H₂S",
+      "C. Water has weaker dipole-dipole interactions",
+      "D. H₂S has more electrons than water"
+    ],
+    answer: "B. Water has stronger hydrogen bonding than H₂S"
+  },
+  {
+    question: "How many moles of oxygen gas (O₂) are present in a 22.4 L container at STP?",
+    options: [
+      "A. 0.5 mol",
+      "B. 1 mol",
+      "C. 2 mol",
+      "D. 22.4 mol"
+    ],
+    answer: "B. 1 mol"
+  },
+  {
+    question: "Which of the following ions has the smallest radius?",
+    options: [
+      "A. Na⁺",
+      "B. Mg²⁺",
+      "C. Al³⁺",
+      "D. Si⁴⁺"
+    ],
+    answer: "D. Si⁴⁺"
+  }
+]
 };
 
 // Current question data

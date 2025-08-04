@@ -618,7 +618,7 @@ const problems = {
     //6
     {
       question:"How many grams of CO₂ are produced when 4.00 g of CH₄ reacts completely with excess O₂ according to the reaction:",
-      image"https://i.imgur.com/Z1RBZfi.png",
+      image:"https://i.imgur.com/Z1RBZfi.png",
       options:["A. 11 g","B. 5.5 g","C. 22 g","D. 44 g"],
       answer:"A. 11 g"
     },

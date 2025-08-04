@@ -94,25 +94,25 @@ header {
 }
 
 .header-right .nav-button[href="about.html"] {
-  background-color: #e91e63;
-  border-color: #e91e63;
+  background-color: #4CAF50 ;
+  border-color: white;
 }
 
 .header-right .nav-button[href="about.html"]:hover {
   background-color: white;
-  color: #e91e63;
-  border-color: #e91e63;
+  color: #4CAF50;
+  border-color: black;
 }
 
 .header-right .nav-button[href="subject-info.html"] {
-  background-color: #009688;
-  border-color: #009688;
+  background-color: #4CAF50;
+  border-color: white;
 }
 
 .header-right .nav-button[href="subject-info.html"]:hover {
   background-color: white;
-  color: #009688;
-  border-color: #009688;
+  color: #4CAF50;
+  border-color: black;
 }
 
 

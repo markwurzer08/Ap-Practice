@@ -611,7 +611,7 @@ const problems = {
     //5
     {
       question:"A 2.00 L balloon filled with helium gas is at 1.00 atm and 25°C. What is the number of moles of helium in the balloon? (R = 0.0821 L·atm/mol·K)",
-      image"https://i.imgur.com/tbqXghB.png",
+      image:"https://i.imgur.com/tbqXghB.png",
       options:["A. 0.0816 mol","B. 0.163 mol","C. 0.0413 mol","D. 0.326 mol"],
       answer:"A. 0.0816 mol"
     },

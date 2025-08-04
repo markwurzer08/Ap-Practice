@@ -569,6 +569,7 @@ const problems = {
     } 
   ],
   chemistry: [
+    //1
   {
     question: "Which of the following best explains why water has a higher boiling point than hydrogen sulfide (H₂S)?",
     options: [
@@ -579,6 +580,7 @@ const problems = {
     ],
     answer: "B. Water has stronger hydrogen bonding than H₂S"
   },
+    //2
   {
     question: "How many moles of oxygen gas (O₂) are present in a 22.4 L container at STP?",
     options: [
@@ -589,6 +591,7 @@ const problems = {
     ],
     answer: "B. 1 mol"
   },
+    //3
   {
     question: "Which of the following ions has the smallest radius?",
     options: [
@@ -598,7 +601,74 @@ const problems = {
       "D. Si⁴⁺"
     ],
     answer: "D. Si⁴⁺"
-  }
+  },
+    //4
+    {
+      question:"What is the electron configuration of a neutral sulfur atom (atomic number 16)?",
+      options:["A. 1s² 2s² 2p⁶ 3s² 3p²","B. 1s² 2s² 2p⁶ 3s² 3p⁴","C. 1s² 2s² 2p⁴ 3s² 3p⁶","D. 1s² 2s² 2p⁶ 3s² 3p⁶"],
+      answer:"B. 1s² 2s² 2p⁶ 3s² 3p⁴"
+    },
+    //5
+    {
+      question:"A 2.00 L balloon filled with helium gas is at 1.00 atm and 25°C. What is the number of moles of helium in the balloon? (R = 0.0821 L·atm/mol·K)",
+      image"https://i.imgur.com/tbqXghB.png",
+      options:["A. 0.0816 mol","B. 0.163 mol","C. 0.0413 mol","D. 0.326 mol"],
+      answer:"A. 0.0816 mol"
+    },
+    //6
+    {
+      question:"How many grams of CO₂ are produced when 4.00 g of CH₄ reacts completely with excess O₂ according to the reaction:",
+      image"https://i.imgur.com/Z1RBZfi.png",
+      options:["A. 11 g","B. 5.5 g","C. 22 g","D. 44 g"],
+      answer:"A. 11 g"
+    },
+    //7
+    {
+      question:"For the equilibrium N₂(g) + 3H₂(g) ⇌ 2NH₃(g), the system is at equilibrium. If more H₂ is added, what happens to the amount of NH₃?",
+      image:"https://i.imgur.com/RjDR7O6.png",
+      options:["A. Decreases","B. Increases","C. Stays the same","D. Becomes zero"],
+      answer:"B. Increases"
+    },
+    //8
+    {
+      question:"What is the pH of a 0.010 M HCl solution?",
+      options:["A. 5.0","B. 4.0","C. 3.0","D. 2.0"],
+      answer:"D. 2.0"
+    },
+    //9
+    {
+      question:"What is the molecular geometry of H₂O?",
+      image:"https://i.imgur.com/q7SH9uE.png",
+      options:["A. Linear","B. Trigonal planar","C. Bent","D. Tetrahedral"],
+      answer:"C. Bent"
+    },
+    //10
+    {
+      question:"A reaction has ΔH = -50 kJ/mol. What type of reaction is it?",
+      options:["A. Endothermic","B. Exothermic","C. Isothermic","D. Non-spontaneous"],
+      answer:"B. Exothermic"
+    },
+    //11
+    {
+      question:"A galvanic cell uses Zn/Zn²⁺ and Cu/Cu²⁺ half-cells. Which electrode is the anode?",
+      image:"https://i.imgur.com/tKxTZ2U.png",
+      options:["A. Cu","B. Salt Bridge","C. Zn","D. Wire"],
+      answer:"C. Zn"
+    },
+    //12
+    {
+      question:"A solution of AgCl is saturated. What happens if NaCl is added to the solution?",
+      image:"https://i.imgur.com/BIH6c55.png",
+      options:["A. No Change Occurs","B. The Solution Evaporates","C. More AgCl precipitates","D. More AgCl dissolves"],
+      answer:"C. More AgCl precipitates"
+    },
+    //13
+    {
+      question:"The reaction 2NO + O₂ → 2NO₂ has a rate law of Rate = k[NO]²[O₂]. If [NO] is doubled and [O₂] is unchanged, how does the rate change?",
+      image:"https://i.imgur.com/Dm0sLYs.png",
+      options:["A. Stays the same","B. Doubles","C. Decreases by half","D. Quadruples"],
+      answer:"D. Quadruples"
+    }
 ]
 };
 

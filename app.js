@@ -668,7 +668,37 @@ const problems = {
       image:"https://i.imgur.com/Dm0sLYs.png",
       options:["A. Stays the same","B. Doubles","C. Decreases by half","D. Quadruples"],
       answer:"D. Quadruples"
-    }
+    },
+    //14
+  {
+    question: "Which of the following best explains why HF has a higher boiling point than HCl?",
+    options: ["A. HF has stronger London dispersion forces", "B. HF forms hydrogen bonds", "C. HCl has stronger dipole-dipole interactions", "D. HF has a lower molar mass"],
+    answer: "B. HF forms hydrogen bonds"
+  },
+  //15
+  {
+    question: "A 50.0 mL solution of 0.100 M NaOH is mixed with 50.0 mL of 0.100 M HCl. What is the final concentration of NaCl in the resulting solution?",
+    options: ["A. 0.0500 M", "B. 0.100 M", "C. 0.200 M", "D. 0.0250 M"],
+    answer: "A. 0.0500 M"
+  },
+  //16
+  {
+    question: "A gas occupies 2.0 L at 1.0 atm and 300 K. If the pressure increases to 2.0 atm and the temperature decreases to 150 K, what is the new volume?",
+    options: ["A. 0.50 L", "B. 1.0 L", "C. 2.0 L", "D. 4.0 L"],
+    answer: "B. 1.0 L"
+  },
+  //17
+  {
+    question: "For the reaction 2NO(g) + O₂(g) ⇌ 2NO₂(g), Kp = 1.5 × 10² at 298 K. If the partial pressures of NO and O₂ are both 0.10 atm, what is the partial pressure of NO₂ at equilibrium?",
+    options: ["A. 0.015 atm", "B. 0.39 atm", "C. 1.5 atm", "D. 3.9 atm"],
+    answer: "B. 0.39 atm"
+  },
+  //18
+  {
+    question: "Which reaction is most likely to produce a precipitate when aqueous solutions are mixed?",
+    options: ["A. NaCl(aq) + AgNO₃(aq) → AgCl(s) + NaNO₃(aq)", "B. HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)", "C. H₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2HCl(aq)", "D. 2H₂O₂(aq) → 2H₂O(l) + O₂(g)"],
+    answer: "A. NaCl(aq) + AgNO₃(aq) → AgCl(s) + NaNO₃(aq)"
+  }  
 ]
 };
 

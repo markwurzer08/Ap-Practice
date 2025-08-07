@@ -698,7 +698,147 @@ const problems = {
     question: "Which reaction is most likely to produce a precipitate when aqueous solutions are mixed?",
     options: ["A. NaCl(aq) + AgNO₃(aq) → AgCl(s) + NaNO₃(aq)", "B. HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)", "C. H₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2HCl(aq)", "D. 2H₂O₂(aq) → 2H₂O(l) + O₂(g)"],
     answer: "A. NaCl(aq) + AgNO₃(aq) → AgCl(s) + NaNO₃(aq)"
-  }  
+  },
+  //1
+  {
+    question: "What is the electron configuration of a Co²⁺ ion in its ground state?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Periodic_table_of_elements_showing_electron_shells_of_cobalt.svg/320px-Periodic_table_of_elements_showing_electron_shells_of_cobalt.svg.png",
+    options: ["A. [Ar] 3d⁷", "B. [Ar] 4s² 3d⁵", "C. [Ar] 4s¹ 3d⁶", "D. [Ar] 4s² 3d⁷"],
+    answer: "A. [Ar] 3d⁷"
+  },
+  //2
+  {
+    question: "A 0.20 M solution of a weak acid HA has a pH of 3.5. What is the Ka of the acid?",
+    image: "https://chem.libretexts.org/@api/deki/files/117716/Figure_14.3.1.png",
+    options: ["A. 2.5 × 10⁻⁴", "B. 1.0 × 10⁻⁵", "C. 6.3 × 10⁻⁶", "D. 4.0 × 10⁻⁷"],
+    answer: "C. 6.3 × 10⁻⁶"
+  },
+  //3
+  {
+    question: "Which molecule has a central atom with sp² hybridization?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Trigonal_planar_geometry_VSEPR.svg/200px-Trigonal_planar_geometry_VSEPR.svg.png",
+    options: ["A. CH₄", "B. BF₃", "C. NH₃", "D. H₂O"],
+    answer: "B. BF₃"
+  },
+  //4
+  {
+    question: "For the reaction 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), ΔH = -198 kJ/mol, what happens to the equilibrium if temperature is decreased?",
+    image: "https://chem.libretexts.org/@api/deki/files/117717/Figure_14.3.2.png",
+    options: ["A. Shifts to the left", "B. Shifts to the right", "C. No change", "D. Shifts to form more O₂ only"],
+    answer: "B. Shifts to the right"
+  },
+  //5
+  {
+    question: "A gas occupies 3.0 L at 2.0 atm and 273 K. If the temperature is increased to 546 K at constant pressure, what is the new volume?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Charles%27s_Law.svg/300px-Charles%27s_Law.svg.png",
+    options: ["A. 1.5 L", "B. 3.0 L", "C. 6.0 L", "D. 12.0 L"],
+    answer: "C. 6.0 L"
+  },
+  //6
+  {
+    question: "Which of the following is a weak electrolyte in aqueous solution?",
+    image: "https://chem.libretexts.org/@api/deki/files/117718/Figure_14.4.1.png",
+    options: ["A. NaBr", "B. HNO₃", "C. CH₃COOH", "D. KOH"],
+    answer: "C. CH₃COOH"
+  },
+  //7
+  {
+    question: "What is the oxidation number of nitrogen in NO₃⁻?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nitrate-ion-2D-dimensions.png/200px-Nitrate-ion-2D-dimensions.png",
+    options: ["A. +3", "B. +5", "C. +7", "D. -3"],
+    answer: "B. +5"
+  },
+  //8
+  {
+    question: "The rate law for a reaction is Rate = k[A]²[B]. If [A] is doubled and [B] is tripled, how does the rate change?",
+    image: "https://chem.libretexts.org/@api/deki/files/117719/Figure_14.6.1.png",
+    options: ["A. Increases by a factor of 6", "B. Increases by a factor of 12", "C. Increases by a factor of 18", "D. Increases by a factor of 36"],
+    answer: "C. Increases by a factor of 18"
+  },
+  //9
+  {
+    question: "Which of the following gases deviates most from ideal behavior at high pressure?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Van_der_Waals_forces.svg/250px-Van_der_Waals_forces.svg.png",
+    options: ["A. He", "B. Ne", "C. CO₂", "D. N₂"],
+    answer: "C. CO₂"
+  },
+  //10
+  {
+    question: "What is the pH of a solution made by mixing 25.0 mL of 0.10 M HCl with 25.0 mL of 0.10 M NaOH?",
+    image: "https://chem.libretexts.org/@api/deki/files/117720/Figure_14.8.1.png",
+    options: ["A. 1.0", "B. 7.0", "C. 13.0", "D. 4.0"],
+    answer: "B. 7.0"
+  },
+  //11
+  {
+    question: "Which compound has the highest lattice energy?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ionic_lattice_structure.svg/200px-Ionic_lattice_structure.svg.png",
+    options: ["A. NaCl", "B. MgO", "C. KBr", "D. CaS"],
+    answer: "B. MgO"
+  },
+  //12
+  {
+    question: "For the reaction H₂(g) + I₂(g) ⇌ 2HI(g), Kc = 50.0 at 400 K. If [H₂] = [I₂] = 0.10 M, what is [HI] at equilibrium?",
+    image: "https://chem.libretexts.org/@api/deki/files/117721/Figure_15.3.1.png",
+    options: ["A. 0.22 M", "B. 0.45 M", "C. 0.67 M", "D. 1.0 M"],
+    answer: "B. 0.45 M"
+  },
+  //13
+  {
+    question: "Which of the following reactions is expected to have a positive ΔS?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Entropy_cycle.svg/200px-Entropy_cycle.svg.png",
+    options: ["A. 2NO₂(g) → N₂O₄(g)", "B. CO₂(s) → CO₂(g)", "C. H₂O(l) → H₂O(s)", "D. 2H₂(g) + O₂(g) → 2H₂O(l)"],
+    answer: "B. CO₂(s) → CO₂(g)"
+  },
+  //14
+  {
+    question: "What is the molecular geometry of XeF₄?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/XeF4_molecular_geometry.svg/200px-XeF4_molecular_geometry.svg.png",
+    options: ["A. Tetrahedral", "B. Square planar", "C. Seesaw", "D. Trigonal bipyramidal"],
+    answer: "B. Square planar"
+  },
+  //15
+  {
+    question: "A buffer is made with 0.10 M HF and 0.10 M NaF. What is the pH if Ka of HF is 6.8 × 10⁻⁴?",
+    image: "https://chem.libretexts.org/@api/deki/files/117722/Figure_14.9.1.png",
+    options: ["A. 2.17", "B. 3.17", "C. 4.17", "D. 7.00"],
+    answer: "B. 3.17"
+  },
+  //16
+  {
+    question: "Which of the following is a redox reaction?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Redox_reaction_diagram.svg/250px-Redox_reaction_diagram.svg.png",
+    options: ["A. NaCl + AgNO₃ → AgCl + NaNO₃", "B. Zn + CuSO₄ → ZnSO₄ + Cu", "C. HCl + NaOH → NaCl + H₂O", "D. CaCO₃ → CaO + CO₂"],
+    answer: "B. Zn + CuSO₄ → ZnSO₄ + Cu"
+  },
+  //17
+  {
+    question: "What is the bond order of the N₂ molecule?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/N2_molecular_orbital_diagram.svg/200px-N2_molecular_orbital_diagram.svg.png",
+    options: ["A. 1", "B. 2", "C. 3", "D. 4"],
+    answer: "C. 3"
+  },
+  //18
+  {
+    question: "A reaction has ΔH = -100 kJ/mol and ΔS = -200 J/mol·K at 298 K. Is the reaction spontaneous?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Gibbs_free_energy_diagram.svg/200px-Gibbs_free_energy_diagram.svg.png",
+    options: ["A. Yes, because ΔG is positive", "B. Yes, because ΔG is negative", "C. No, because ΔG is positive", "D. No, because ΔG is negative"],
+    answer: "C. No, because ΔG is positive"
+  },
+  //19
+  {
+    question: "Which of the following will increase the rate of a chemical reaction?",
+    image: "https://chem.libretexts.org/@api/deki/files/117723/Figure_14.7.1.png",
+    options: ["A. Decreasing the temperature", "B. Adding a catalyst", "C. Decreasing the concentration of reactants", "D. Increasing the volume of the container"],
+    answer: "B. Adding a catalyst"
+  },
+  //20
+  {
+    question: "What is the empirical formula of a compound with 40.0% C, 6.7% H, and 53.3% O by mass?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Empirical_formula_calculation.svg/250px-Empirical_formula_calculation.svg.png",
+    options: ["A. CH₂O", "B. C₂H₄O₂", "C. C₃H₆O₃", "D. CH₄O"],
+    answer: "A. CH₂O"
+  }
 ]
 };
 

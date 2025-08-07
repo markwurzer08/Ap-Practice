@@ -701,143 +701,163 @@ const problems = {
   },
   //1
   {
-    question: "What is the electron configuration of a Co²⁺ ion in its ground state?",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Periodic_table_of_elements_showing_electron_shells_of_cobalt.svg/320px-Periodic_table_of_elements_showing_electron_shells_of_cobalt.svg.png",
-    options: ["A. [Ar] 3d⁷", "B. [Ar] 4s² 3d⁵", "C. [Ar] 4s¹ 3d⁶", "D. [Ar] 4s² 3d⁷"],
-    answer: "A. [Ar] 3d⁷"
+    question: "What is the ground-state electron configuration of a Mn²⁺ ion?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Periodic_table_manganese_electron_configuration.svg/320px-Periodic_table_manganese_electron_configuration.svg.png",
+    options: ["A. [Ar] 3d⁵", "B. [Ar] 4s² 3d³", "C. [Ar] 4s¹ 3d⁴", "D. [Ar] 4s² 3d⁵"],
+    answer: "A. [Ar] 3d⁵",
+    explanation: "Mn (atomic number 25) has a ground-state configuration of [Ar] 4s² 3d⁵. For Mn²⁺, two electrons are removed from the 4s orbital, leaving [Ar] 3d⁵."
   },
   //2
   {
-    question: "A 0.20 M solution of a weak acid HA has a pH of 3.5. What is the Ka of the acid?",
-    image: "https://chem.libretexts.org/@api/deki/files/117716/Figure_14.3.1.png",
-    options: ["A. 2.5 × 10⁻⁴", "B. 1.0 × 10⁻⁵", "C. 6.3 × 10⁻⁶", "D. 4.0 × 10⁻⁷"],
-    answer: "C. 6.3 × 10⁻⁶"
+    question: "A 0.15 M solution of a weak acid HA has a pH of 4.2. What is the Ka of the acid?",
+    image: "https://chem.libretexts.org/@api/deki/files/117716/Figure_14.3.1.png?revision=1",
+    options: ["A. 1.6 × 10⁻⁴", "B. 3.2 × 10⁻⁵", "C. 6.3 × 10⁻⁶", "D. 1.0 × 10⁻⁷"],
+    answer: "C. 6.3 × 10⁻⁶",
+    explanation: "pH = 4.2 gives [H⁺] = 10⁻⁴.² ≈ 6.3 × 10⁻⁵ M. For a weak acid, Ka ≈ [H⁺]² / [HA] = (6.3 × 10⁻⁵)² / 0.15 ≈ 6.3 × 10⁻⁶."
   },
   //3
   {
-    question: "Which molecule has a central atom with sp² hybridization?",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Trigonal_planar_geometry_VSEPR.svg/200px-Trigonal_planar_geometry_VSEPR.svg.png",
-    options: ["A. CH₄", "B. BF₃", "C. NH₃", "D. H₂O"],
-    answer: "B. BF₃"
+    question: "Which molecule has a trigonal pyramidal molecular geometry?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Trigonal_pyramidal_molecular_geometry_VSEPR.svg/200px-Trigonal_pyramidal_molecular_geometry_VSEPR.svg.png",
+    options: ["A. BF₃", "B. NH₃", "C. CO₂", "D. SO₂"],
+    answer: "B. NH₃",
+    explanation: "NH₃ has a central nitrogen with three bonding pairs and one lone pair, leading to trigonal pyramidal geometry (sp³ hybridization)."
   },
   //4
   {
-    question: "For the reaction 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), ΔH = -198 kJ/mol, what happens to the equilibrium if temperature is decreased?",
-    image: "https://chem.libretexts.org/@api/deki/files/117717/Figure_14.3.2.png",
-    options: ["A. Shifts to the left", "B. Shifts to the right", "C. No change", "D. Shifts to form more O₂ only"],
-    answer: "B. Shifts to the right"
+    question: "For the reaction 2NO₂(g) ⇌ N₂O₄(g), ΔH = -58 kJ/mol, what happens to the equilibrium if temperature increases?",
+    image: "https://chem.libretexts.org/@api/deki/files/117717/Figure_14.3.2.png?revision=1",
+    options: ["A. Shifts to the right", "B. Shifts to the left", "C. No change", "D. Shifts to form more N₂O₄"],
+    answer: "B. Shifts to the left",
+    explanation: "The reaction is exothermic (ΔH < 0). Increasing temperature favors the endothermic direction (reverse), shifting equilibrium to the left."
   },
   //5
   {
-    question: "A gas occupies 3.0 L at 2.0 atm and 273 K. If the temperature is increased to 546 K at constant pressure, what is the new volume?",
+    question: "A gas occupies 4.0 L at 1.5 atm and 300 K. If temperature increases to 600 K at constant pressure, what is the new volume?",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Charles%27s_Law.svg/300px-Charles%27s_Law.svg.png",
-    options: ["A. 1.5 L", "B. 3.0 L", "C. 6.0 L", "D. 12.0 L"],
-    answer: "C. 6.0 L"
+    options: ["A. 2.0 L", "B. 4.0 L", "C. 8.0 L", "D. 16.0 L"],
+    answer: "C. 8.0 L",
+    explanation: "Using Charles’s Law (V₁/T₁ = V₂/T₂), V₂ = V₁ × (T₂/T₁) = 4.0 × (600/300) = 8.0 L."
   },
   //6
   {
-    question: "Which of the following is a weak electrolyte in aqueous solution?",
-    image: "https://chem.libretexts.org/@api/deki/files/117718/Figure_14.4.1.png",
-    options: ["A. NaBr", "B. HNO₃", "C. CH₃COOH", "D. KOH"],
-    answer: "C. CH₃COOH"
+    question: "Which compound is a strong electrolyte in aqueous solution?",
+    image: "https://chem.libretexts.org/@api/deki/files/117718/Figure_14.4.1.png?revision=1",
+    options: ["A. HF", "B. CH₃OH", "C. KCl", "D. NH₃"],
+    answer: "C. KCl",
+    explanation: "KCl is an ionic compound that fully dissociates in water, making it a strong electrolyte, unlike weak acids (HF) or nonelectrolytes (CH₃OH, NH₃)."
   },
   //7
   {
-    question: "What is the oxidation number of nitrogen in NO₃⁻?",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nitrate-ion-2D-dimensions.png/200px-Nitrate-ion-2D-dimensions.png",
+    question: "What is the oxidation number of phosphorus in PO₄³⁻?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Phosphate-ion-2D-dimensions.png/200px-Phosphate-ion-2D-dimensions.png",
     options: ["A. +3", "B. +5", "C. +7", "D. -3"],
-    answer: "B. +5"
+    answer: "B. +5",
+    explanation: "In PO₄³⁻, each O is -2 (total -8). The ion’s charge is -3, so P’s oxidation number is +5 to balance: x + (-8) = -3."
   },
   //8
   {
-    question: "The rate law for a reaction is Rate = k[A]²[B]. If [A] is doubled and [B] is tripled, how does the rate change?",
-    image: "https://chem.libretexts.org/@api/deki/files/117719/Figure_14.6.1.png",
-    options: ["A. Increases by a factor of 6", "B. Increases by a factor of 12", "C. Increases by a factor of 18", "D. Increases by a factor of 36"],
-    answer: "C. Increases by a factor of 18"
+    question: "The rate law for a reaction is Rate = k[A][B]². If [A] is doubled and [B] is halved, how does the rate change?",
+    image: "https://chem.libretexts.org/@api/deki/files/117719/Figure_14.6.1.png?revision=1",
+    options: ["A. Increases by 2", "B. Decreases by 2", "C. Decreases by 4", "D. Stays the same"],
+    answer: "D. Stays the same",
+    explanation: "Rate = k(2A)(B/2)² = k(2A)(B²/4) = (2/4)k[A][B]² = 0.5 × original rate × 2 = original rate."
   },
   //9
   {
-    question: "Which of the following gases deviates most from ideal behavior at high pressure?",
+    question: "Which gas is least likely to behave ideally at low temperature and high pressure?",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Van_der_Waals_forces.svg/250px-Van_der_Waals_forces.svg.png",
-    options: ["A. He", "B. Ne", "C. CO₂", "D. N₂"],
-    answer: "C. CO₂"
+    options: ["A. He", "B. Ne", "C. NH₃", "D. Ar"],
+    answer: "C. NH₃",
+    explanation: "NH₃ has strong intermolecular forces (hydrogen bonding), causing significant deviation from ideal gas behavior under high pressure and low temperature."
   },
   //10
   {
-    question: "What is the pH of a solution made by mixing 25.0 mL of 0.10 M HCl with 25.0 mL of 0.10 M NaOH?",
-    image: "https://chem.libretexts.org/@api/deki/files/117720/Figure_14.8.1.png",
-    options: ["A. 1.0", "B. 7.0", "C. 13.0", "D. 4.0"],
-    answer: "B. 7.0"
+    question: "What is the pH of a solution made by mixing 20.0 mL of 0.10 M HCl with 20.0 mL of 0.10 M NaOH?",
+    image: "https://chem.libretexts.org/@api/deki/files/117720/Figure_14.8.1.png?revision=1",
+    options: ["A. 1.0", "B. 7.0", "C. 10.0", "D. 13.0"],
+    answer: "B. 7.0",
+    explanation: "Equal moles of HCl and NaOH (0.002 mol each) neutralize completely, forming water and NaCl, resulting in a neutral pH of 7.0."
   },
   //11
   {
-    question: "Which compound has the highest lattice energy?",
+    question: "Which ionic compound has the lowest lattice energy?",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ionic_lattice_structure.svg/200px-Ionic_lattice_structure.svg.png",
-    options: ["A. NaCl", "B. MgO", "C. KBr", "D. CaS"],
-    answer: "B. MgO"
+    options: ["A. NaF", "B. MgO", "C. LiCl", "D. CaO"],
+    answer: "C. LiCl",
+    explanation: "Lattice energy is higher for smaller ions and higher charges. LiCl has larger ions (Li⁺, Cl⁻) and lower charges (+1, -1) than MgO or CaO, so it has the lowest lattice energy."
   },
   //12
   {
-    question: "For the reaction H₂(g) + I₂(g) ⇌ 2HI(g), Kc = 50.0 at 400 K. If [H₂] = [I₂] = 0.10 M, what is [HI] at equilibrium?",
-    image: "https://chem.libretexts.org/@api/deki/files/117721/Figure_15.3.1.png",
-    options: ["A. 0.22 M", "B. 0.45 M", "C. 0.67 M", "D. 1.0 M"],
-    answer: "B. 0.45 M"
+    question: "For the reaction CO(g) + 2H₂(g) ⇌ CH₃OH(g), Kc = 14.5 at 500 K. If [CO] = [H₂] = 0.20 M, what is [CH₃OH] at equilibrium?",
+    image: "https://chem.libretexts.org/@api/deki/files/117721/Figure_15.3.1.png?revision=1",
+    options: ["A. 0.058 M", "B. 0.116 M", "C. 0.232 M", "D. 0.464 M"],
+    answer: "B. 0.116 M",
+    explanation: "Kc = [CH₃OH] / ([CO][H₂]²). Plugging in: 14.5 = [CH₃OH] / (0.20 × 0.20²). Solve: [CH₃OH] = 14.5 × 0.008 = 0.116 M."
   },
   //13
   {
-    question: "Which of the following reactions is expected to have a positive ΔS?",
+    question: "Which process is expected to have a negative ΔS?",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Entropy_cycle.svg/200px-Entropy_cycle.svg.png",
-    options: ["A. 2NO₂(g) → N₂O₄(g)", "B. CO₂(s) → CO₂(g)", "C. H₂O(l) → H₂O(s)", "D. 2H₂(g) + O₂(g) → 2H₂O(l)"],
-    answer: "B. CO₂(s) → CO₂(g)"
+    options: ["A. N₂(g) + 3H₂(g) → 2NH₃(g)", "B. H₂O(g) → H₂O(l)", "C. NaCl(s) → Na⁺(aq) + Cl⁻(aq)", "D. CO₂(s) → CO₂(g)"],
+    answer: "B. H₂O(g) → H₂O(l)",
+    explanation: "Condensation (gas to liquid) decreases entropy due to reduced molecular disorder, making ΔS negative."
   },
   //14
   {
-    question: "What is the molecular geometry of XeF₄?",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/XeF4_molecular_geometry.svg/200px-XeF4_molecular_geometry.svg.png",
-    options: ["A. Tetrahedral", "B. Square planar", "C. Seesaw", "D. Trigonal bipyramidal"],
-    answer: "B. Square planar"
+    question: "What is the molecular geometry of SF₄?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Seesaw_molecular_geometry_VSEPR.svg/200px-Seesaw_molecular_geometry_VSEPR.svg.png",
+    options: ["A. Tetrahedral", "B. Square planar", "C. Seesaw", "D. Trigonal pyramidal"],
+    answer: "C. Seesaw",
+    explanation: "SF₄ has four bonding pairs and one lone pair on sulfur, leading to a seesaw geometry (based on trigonal bipyramidal electron geometry)."
   },
   //15
   {
-    question: "A buffer is made with 0.10 M HF and 0.10 M NaF. What is the pH if Ka of HF is 6.8 × 10⁻⁴?",
-    image: "https://chem.libretexts.org/@api/deki/files/117722/Figure_14.9.1.png",
-    options: ["A. 2.17", "B. 3.17", "C. 4.17", "D. 7.00"],
-    answer: "B. 3.17"
+    question: "A buffer contains 0.10 M HCN and 0.10 M NaCN. If Ka of HCN is 4.9 × 10⁻¹⁰, what is the pH?",
+    image: "https://chem.libretexts.org/@api/deki/files/117722/Figure_14.9.1.png?revision=1",
+    options: ["A. 7.00", "B. 8.31", "C. 9.31", "D. 10.31"],
+    answer: "C. 9.31",
+    explanation: "For a buffer, pH = pKa + log([base]/[acid]). pKa = -log(4.9 × 10⁻¹⁰) ≈ 9.31. Since [HCN] = [NaCN], pH = 9.31."
   },
   //16
   {
-    question: "Which of the following is a redox reaction?",
+    question: "Which reaction represents a redox process?",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Redox_reaction_diagram.svg/250px-Redox_reaction_diagram.svg.png",
-    options: ["A. NaCl + AgNO₃ → AgCl + NaNO₃", "B. Zn + CuSO₄ → ZnSO₄ + Cu", "C. HCl + NaOH → NaCl + H₂O", "D. CaCO₃ → CaO + CO₂"],
-    answer: "B. Zn + CuSO₄ → ZnSO₄ + Cu"
+    options: ["A. NaOH + HCl → NaCl + H₂O", "B. Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag", "C. CaCO₃ → CaO + CO₂", "D. BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl"],
+    answer: "B. Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag",
+    explanation: "Cu is oxidized (0 to +2), and Ag is reduced (+1 to 0), making this a redox reaction."
   },
   //17
   {
-    question: "What is the bond order of the N₂ molecule?",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/N2_molecular_orbital_diagram.svg/200px-N2_molecular_orbital_diagram.svg.png",
-    options: ["A. 1", "B. 2", "C. 3", "D. 4"],
-    answer: "C. 3"
+    question: "What is the bond order of O₂⁺?",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/O2_molecular_orbital_diagram.svg/200px-O2_molecular_orbital_diagram.svg.png",
+    options: ["A. 1.5", "B. 2.0", "C. 2.5", "D. 3.0"],
+    answer: "C. 2.5",
+    explanation: "O₂⁺ has 11 valence electrons. Bond order = (bonding electrons - antibonding electrons)/2 = (8 - 3)/2 = 2.5."
   },
   //18
   {
-    question: "A reaction has ΔH = -100 kJ/mol and ΔS = -200 J/mol·K at 298 K. Is the reaction spontaneous?",
+    question: "A reaction has ΔH = +50 kJ/mol and ΔS = +150 J/mol·K at 298 K. Is it spontaneous?",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Gibbs_free_energy_diagram.svg/200px-Gibbs_free_energy_diagram.svg.png",
-    options: ["A. Yes, because ΔG is positive", "B. Yes, because ΔG is negative", "C. No, because ΔG is positive", "D. No, because ΔG is negative"],
-    answer: "C. No, because ΔG is positive"
+    options: ["A. Yes, ΔG is negative", "B. Yes, ΔG is positive", "C. No, ΔG is positive", "D. No, ΔG is negative"],
+    answer: "C. No, ΔG is positive",
+    explanation: "ΔG = ΔH - TΔS = 50,000 - (298 × 150) = 50,000 - 44,700 = +5,300 J/mol. Since ΔG > 0, the reaction is not spontaneous."
   },
   //19
   {
-    question: "Which of the following will increase the rate of a chemical reaction?",
-    image: "https://chem.libretexts.org/@api/deki/files/117723/Figure_14.7.1.png",
-    options: ["A. Decreasing the temperature", "B. Adding a catalyst", "C. Decreasing the concentration of reactants", "D. Increasing the volume of the container"],
-    answer: "B. Adding a catalyst"
+    question: "Which factor will not increase the rate of a reaction?",
+    image: "https://chem.libretexts.org/@api/deki/files/117723/Figure_14.7.1.png?revision=1",
+    options: ["A. Increasing temperature", "B. Adding a catalyst", "C. Decreasing reactant concentration", "D. Increasing surface area"],
+    answer: "C. Decreasing reactant concentration",
+    explanation: "Decreasing reactant concentration reduces collision frequency, slowing the reaction rate."
   },
   //20
   {
-    question: "What is the empirical formula of a compound with 40.0% C, 6.7% H, and 53.3% O by mass?",
+    question: "A compound is 26.7% P and 73.3% Cl by mass. What is its empirical formula?",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Empirical_formula_calculation.svg/250px-Empirical_formula_calculation.svg.png",
-    options: ["A. CH₂O", "B. C₂H₄O₂", "C. C₃H₆O₃", "D. CH₄O"],
-    answer: "A. CH₂O"
+    options: ["A. PCl", "B. PCl₃", "C. P₂Cl₅", "D. PCl₂"],
+    answer: "B. PCl₃",
+    explanation: "Assume 100 g: 26.7 g P ÷ 30.97 = 0.862 mol P; 73.3 g Cl ÷ 35.45 = 2.07 mol Cl. Ratio: 0.862/0.862 = 1 P, 2.07/0.862 ≈ 3 Cl. Empirical formula is PCl₃."
   }
 ]
 };

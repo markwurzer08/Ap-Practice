@@ -859,7 +859,21 @@ const problems = {
     answer: "B. PCl₃",
     explanation: "Assume 100 g: 26.7 g P ÷ 30.97 = 0.862 mol P; 73.3 g Cl ÷ 35.45 = 2.07 mol Cl. Ratio: 0.862/0.862 = 1 P, 2.07/0.862 ≈ 3 Cl. Empirical formula is PCl₃."
   }
-]
+],
+  satreading:[
+    {
+      question:"abcdefgh",
+      options:["A.","B.","C.","D."],
+      answer:"A."
+    }
+  ],
+  satmath:[
+    {
+      question:"abcdefgh",
+      options:["A.","B.","C.","D."],
+      answer:"A."
+    }
+  ]
 };
 
 // Current question data
